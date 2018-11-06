@@ -24,7 +24,7 @@ $share_text_facebook="Count down the days till Christmas with the data-driven Ad
 $notification_text="Soon it's Christmas! Count down the days together with your friends from  <a target='_blank' href='https://www.journocode.com'>Journocode</a> and discover a new data-driven surprise every day.<br>Happy holidays to all of you!";
 //========================================================
 
-$base_url="https://advent17.journocode.com";
+$base_url="https://advent18.journocode.com";
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
 $date2 = new DateTime("2017-12-01");
@@ -40,7 +40,7 @@ $day_delta = '#day'.(string)$day_delta
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="https://www.advent17.journocode.com/assets/ico/favi.ico">
+    <link rel="shortcut icon" href="https://advent18.journocode.com/assets/ico/favi.ico">
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
@@ -79,7 +79,7 @@ $day_delta = '#day'.(string)$day_delta
     <link rel="manifest" href="https://www.journocode.com/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="https://www.journocode.com/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d"
           color="#5bbad5">
-    <link rel="shortcut icon" href="https://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="https://www.journocode.com/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="https://www.journocode.com/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
