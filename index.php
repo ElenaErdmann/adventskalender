@@ -21,7 +21,7 @@ $description="Soon it's Christmas! Count down the days with the data-driven Adve
 $share_text="Count down the days till Christmas with the #ddj Advent Calendar from @journocode and discover a surprise every day.";
 $share_text_facebook="Count down the days till Christmas with the data-driven Advent Calendar from @Journocode and discover a surprise every day.";
 //NOTIFICATION
-$notification_text="Hey you! Soon it's Christmas! Count down the days together with your friends from  <a target='_blank' href='https://www.journocode.com'>Journocode</a> and discover a new data-driven surprise every day.<br>Happy holidays to all of you!";
+$notification_text="Hey you 2! Soon it's Christmas! Count down the days together with your friends from  <a target='_blank' href='https://www.journocode.com'>Journocode</a> and discover a new data-driven surprise every day.<br>Happy holidays to all of you!";
 //========================================================
 
 $base_url="https://advent18.journocode.com";
