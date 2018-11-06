@@ -377,8 +377,6 @@ $day_delta = '#day'.(string)$day_delta
           <ul class="lightrope uk-position-bottom push-down"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
         </div>
 
-      </div>
-    </div>
     <div class="tree-bg">
     <div class="section tree-middle" id="day1" >
 
@@ -387,7 +385,7 @@ $day_delta = '#day'.(string)$day_delta
           <svg viewBox="0 0 338 408" preserveAspectRatio="xMidYMid meet" width="95%" class="uk-align-center uk-margin-remove-bottom ball-svg" id="ball1">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">5 tips for those starting out in data journalism
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">A tips for those starting out in data journalism
           </div>
         </a>
       </div>
