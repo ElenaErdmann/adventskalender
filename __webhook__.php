@@ -17,8 +17,8 @@ if (ipMatch($_SERVER['REMOTE_ADDR'], $gh_ips) === false) {
     die(1);
 }
 $BRANCH = $_GET['branch'];
-$BRANCH = 'master'
-$output = 'none'
+$BRANCH = 'master';
+$output = 'none';
 if (!empty($BRANCH)) {
     $output = shell_exec("cd /var/www/advent18.journocode.com/html; git pull origin {$BRANCH};");
     echo "<pre>$output</pre>";
