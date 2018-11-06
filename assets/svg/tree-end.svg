@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 414 736" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Mobile-infinited-tree-02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.1459652" width="235.468791" height="687.655764"></rect>
+        <polygon id="path-2" points="521.88326 42.8618235 0.188906875 42.8618235 0.188906875 435.322284 87.7843377 521.277758 175.888946 433.660653 260.862114 522.718968 345.589181 435.347717 433.210071 520.633452 521.88326 435.271417"></polygon>
+    </defs>
+    <g id="Weihnachtsbaum" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-infinited-tree-02"></g>
+        <g id="Mobile-infinited-tree-all" transform="translate(0.000000, -736.000000)">
+            <g id="Rectangle-1-+-Rectangle-1-Copy" transform="translate(89.000000, 687.000000)">
+                <g id="Rectangle-1">
+                    <use fill="#D49959" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#282828" stroke-width="9" x="-4.5" y="-4.3540348" width="244.468791" height="696.655764"></rect>
+                </g>
+                <rect id="Rectangle-1-Copy" fill="#BE7E36" x="0" y="14.7769389" width="117.734396" height="673.02479"></rect>
+            </g>
+
+            <g id="tree-layer-extendent-copy-64" transform="translate(-54.000000, 414.863095)">
+                <g id="Path-1" stroke-linejoin="round">
+                    <use fill="#33CE86" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#2D2D2D" stroke-width="7" d="M175.823315,438.661993 L258.329844,525.135082 L260.841652,527.767647 L263.374716,525.155529 L345.660689,440.301555 L430.768843,523.141521 L433.196629,525.504604 L435.637419,523.154956 L524.310608,437.792921 L525.38326,436.760323 L525.38326,435.271417 L525.38326,42.8618235 L525.38326,39.3618235 L521.88326,39.3618235 L0.188906875,39.3618235 L-3.31109313,39.3618235 L-3.31109313,42.8618235 L-3.31109313,435.322284 L-3.31109313,436.791442 L-2.26247128,437.820432 L85.3329595,523.775906 L87.800757,526.197502 L90.2523359,523.759488 L175.823315,438.661993 Z"></path>
+                </g>
+                <polyline id="Path-1-Copy-2" fill="#1AC270" points="259.996513 0.38198995 0.188906875 435.322284 87.7843377 521.277758 175.888946 433.660653 260.862114 522.718968 345.589181 435.347717"></polyline>
+                <polygon id="Path-1-Copy" fill="#22AC6A" points="259.996513 0.38198995 0.188906875 11.3618235 0.188906875 435.322284 87.7843377 521.277758 175.888946 433.660653"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

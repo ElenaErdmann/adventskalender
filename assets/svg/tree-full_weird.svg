@@ -1,0 +1,53 @@
+<svg  viewBox="-58 0 530 736" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <g id="Weihnachtsbaum" fill="none" fill-rule="evenodd">
+      <defs>
+    <path id="path-1" d="M0 .15h235.47V687.8H0z"/>
+    <path id="path-2" d="M521.88 42.86H.18v392.46l87.6 85.96 88.1-87.62 84.98 89.06 84.73-87.37 87.6 85.28 88.66-85.36z"/>
+    <path id="path-3" d="M521.88 42.86H.18v392.46l87.6 85.96 88.1-87.62 84.98 89.06 84.73-87.37 87.6 85.28 88.66-85.36z"/>
+    <path id="path-4" d="M521.88 42.86H.18v392.46l87.6 85.96 88.1-87.62 84.98 89.06 84.73-87.37 87.6 85.28 88.66-85.36z"/>
+    <path id="path-5" d="M521.88 42.86H.18v392.46l87.6 85.96 88.1-87.62 84.98 89.06 84.73-87.37 87.6 85.28 88.66-85.36z"/>
+  </defs>
+    <g id="Mobile-infinited-tree-all">
+      <g id="Rectangle-1-+-Rectangle-1-Copy">
+        <g id="Rectangle-1" transform="translate(89.000000, 687.000000)">
+          <use fill="#D49959" xlink:href="#path-1"/>
+          <path stroke="#282828" stroke-width="9" d="M-4.5-4.35h244.47V692.3H-4.5z"/>
+        </g>
+        <path id="Rectangle-1-Copy" fill="#BE7E36" d="M89 701.78h117.73v673.02H89z"/>
+      </g>
+      <g id="tree-layer-extendent-copy-64">
+        <g id="Path-1" stroke-linejoin="round" transform="translate(-54.000000, 414.863095)">
+          <use fill="#33CE86" xlink:href="#path-2"/>
+          <path stroke="#2D2D2D" stroke-width="7" d="M175.82 438.66l82.5 86.48 2.52 2.63 2.53-2.6 82.3-84.87 85.1 82.84 2.43 2.36 2.44-2.35 88.67-85.36 1.1-1.06V39.34H-3.32V436.8l1.06 1.02 87.6 85.96 2.46 2.42 2.44-2.44 85.57-85.1z"/>
+        </g>
+        <path id="Path-1-Copy-2" fill="#1AC270" d="M206 415.25L-53.8 850.2l87.58 85.94 88.1-87.62 84.98 89.06 84.73-87.37"/>
+        <path id="Path-1-Copy" fill="#22AC6A" d="M206 415.25l-259.8 10.97V850.2l87.58 85.94 88.1-87.62z"/>
+      </g>
+      <g id="tree-layer-extendent-copy-66">
+        <g id="Path-1" stroke-linejoin="round" transform="translate(-54.000000, 203.000000)">
+          <use fill="#33CE86" xlink:href="#path-3"/>
+          <path stroke="#2D2D2D" stroke-width="7" d="M175.82 438.66l82.5 86.48 2.52 2.63 2.53-2.6 82.3-84.87 85.1 82.84 2.43 2.36 2.44-2.35 88.67-85.36 1.1-1.06V39.34H-3.32V436.8l1.06 1.02 87.6 85.96 2.46 2.42 2.44-2.44 85.57-85.1z"/>
+        </g>
+        <path id="Path-1-Copy-2" fill="#1AC270" d="M206 203.38L-53.8 638.32l87.58 85.96 88.1-87.62 84.98 89.06 84.73-87.37"/>
+        <path id="Path-1-Copy" fill="#22AC6A" d="M206 203.38l-259.8 10.98v423.96l87.58 85.96 88.1-87.62z"/>
+      </g>
+      <g id="tree-layer-extendent-copy-63">
+        <g id="Path-1" stroke-linejoin="round" transform="translate(-54.000000, -55.999023)">
+          <use fill="#33CE86" xlink:href="#path-4"/>
+          <path stroke="#2D2D2D" stroke-width="7" d="M175.82 438.66l82.5 86.48 2.52 2.63 2.53-2.6 82.3-84.87 85.1 82.84 2.43 2.36 2.44-2.35 88.67-85.36 1.1-1.06V39.34H-3.32V436.8l1.06 1.02 87.6 85.96 2.46 2.42 2.44-2.44 85.57-85.1z"/>
+        </g>
+        <path id="Path-1-Copy-2" fill="#1AC270" d="M206-55.62L-53.8 379.32l87.58 85.96 88.1-87.62 84.98 89.06 84.73-87.37"/>
+        <path id="Path-1-Copy" fill="#22AC6A" d="M206-55.62L-53.8-44.64v423.96l87.58 85.96 88.1-87.62z"/>
+      </g>
+      <g id="tree-layer-extendent-copy-65">
+        <g id="Path-1" stroke-linejoin="round" transform="translate(-54.000000, -316.999023)">
+          <use fill="#33CE86" xlink:href="#path-5"/>
+          <path stroke="#2D2D2D" stroke-width="7" d="M175.82 438.66l82.5 86.48 2.52 2.63 2.53-2.6 82.3-84.87 85.1 82.84 2.43 2.36 2.44-2.35 88.67-85.36 1.1-1.06V39.34H-3.32V436.8l1.06 1.02 87.6 85.96 2.46 2.42 2.44-2.44 85.57-85.1z"/>
+        </g>
+        <path id="Path-1-Copy-2" fill="#1AC270" d="M206-316.62L-53.8 118.32l87.58 85.96 88.1-87.62 84.98 89.06 84.73-87.37"/>
+        <path id="Path-1-Copy" fill="#22AC6A" d="M206-316.62l-259.8 10.98v423.96l87.58 85.96 88.1-87.62z"/>
+      </g>
+    </g>
+  </g>
+</svg>

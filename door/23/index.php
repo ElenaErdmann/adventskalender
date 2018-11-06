@@ -1,0 +1,364 @@
+<!-- 
+ __    __       ___       __    __       ___          
+|  |  |  |     /   \     |  |  |  |     /   \         
+|  |__|  |    /  ^  \    |  |__|  |    /  ^  \        
+|   __   |   /  /_\  \   |   __   |   /  /_\  \       
+|  |  |  |  /  _____  \  |  |  |  |  /  _____  \   __ 
+|__|  |__| /__/     \__\ |__|  |__| /__/     \__\ (_ )
+                                                   |/ 
+.__   __.  _______ .______       _______   __         
+|  \ |  | |   ____||   _  \     |       \ |  |        
+|   \|  | |  |__   |  |_)  |    |  .--.  ||  |        
+|  . `  | |   __|  |      /     |  |  |  ||  |        
+|  |\   | |  |____ |  |\  \----.|  '--'  ||__|        
+|__| \__| |_______|| _| `._____||_______/ (__)      
+ -->
+<?php 
+// AUTHOR ============================================
+// Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
+$author_name="John Burn-Murdoch";
+$author_tw="jburnmurdoch";
+$author_fb="";
+$author_homepage="";
+//NOTIFICATION
+$notification_text="";
+//========================================================
+$site_name="Journocode Advent Calendar 2017";
+$title="Squirrel Talk with Data Journalist John Burn-Murdoch";
+$description="Data Journalist John Burn-Murdoch talked about Data Journalism and his work.";
+$share_text="Data Journalist @jburnmurdoch talked to @journocode about #ddj and his work.";
+ 
+//=========================================================
+// Function for basic field validation (present and neither empty nor only white space
+$base_url="http://advent17.journocode.com";
+$DEBUG = False;
+date_default_timezone_set("Europe/Berlin");
+$date1 = new DateTime('NOW');
+$date2 = new DateTime("2017-12-00");
+function debug($data,$DEBUG) {
+if($DEBUG){
+if(is_array($data) || is_object($data)){
+echo("<script>console.log('PHP: ".json_encode($data)."');</script>");
+} else {
+echo("<script>console.log('PHP: ".$data."');</script>");
+}
+}
+}
+function IsNullOrEmptyString($question){
+return (!isset($question) || trim($question)==='');
+}
+session_start();
+// session_unset ();
+//Code for day calculating
+$day_delta = $date2->diff($date1)->format("%r%a");
+$dir_num = (int)basename(__DIR__); 
+$door_diff = $day_delta-$dir_num;
+$show = False;
+if($door_diff >= 0){
+$show = True;
+}
+$door_url="../";
+if ($day_delta > 0){
+$door_url="/door/".(string)$day_delta."/";
+}
+//increase count and save to file with lock if session doesnt have it, else just read from session
+$count=0;
+if(!isset($_SESSION['day'.(string)$dir_num])) {
+debug("No Session found",$DEBUG );
+$file = 'count.txt';
+if (!file_exists($file)) {
+debug("File not existed",$DEBUG );
+touch($file);
+debug("Touch File",$DEBUG );
+}else{
+debug("File existed",$DEBUG );
+}
+//Open the File Stream
+$handle = fopen($file, "r+");
+//Lock File, error if unable to lock
+if(flock($handle, LOCK_EX)) {
+$size = filesize($file);
+$count = $size === 0 ? 0 : fread($handle, $size); //Get Current Hit Count
+$count = $count + 1; //Increment Hit Count by 1
+ftruncate($handle, 0); //Truncate the file to 0
+rewind($handle); //Set write pointer to beginning of file
+fwrite($handle, $count); //Write the new Hit Count
+flock($handle, LOCK_UN); //Unlock File
+}else{
+debug("Warning could not lock File!",$DEBUG );
+}
+$_SESSION['day'.(string)$dir_num] = $count; 
+} else{
+debug("Session found",$DEBUG );
+$count=$_SESSION['day'.(string)$dir_num];
+}
+debug("Count",$DEBUG );
+debug((string)$count,$DEBUG );
+// else {
+//     echo "Could not Lock File!";
+// }
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta property="jc:door_diff" content="<?= $door_diff ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Pagekit">
+    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <?php if($show) : ?>
+    <meta property="og:site_name" content="<?=$site_name?>">
+    <meta property="og:title" content="<?=$title?>">
+    <meta property="og:description" content="<?=$description?>">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.advent17.journocode.com/door/23/assets/share.png">
+    <meta property="fb:app_id" content="1593595690933146" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@journocode">
+    <meta name="twitter:title" content="<?=$title?>">
+    <meta name="twitter:description" content="<?=$description?>">
+    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/23/assets/share.png">
+    <title>
+      <?=$title?>
+    </title>
+    <?php else : ?>
+    <title>Oops, you are too early!
+    </title>
+    <meta name="robots" content="noindex" />
+    <?php endif; ?>
+    <link href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed">
+    <link href="../../dist/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-57x57.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-60x60.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-76x76.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-114x114.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-120x120.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-144x144.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-152x152.png?v=gAAQ8zKY9d">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/apple-touch-icon-180x180.png?v=gAAQ8zKY9d">
+    <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-32x32.png?v=gAAQ8zKY9d" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-194x194.png?v=gAAQ8zKY9d" sizes="194x194">
+    <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-96x96.png?v=gAAQ8zKY9d" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/android-chrome-192x192.png?v=gAAQ8zKY9d" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
+    <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
+    <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
+    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
+    <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
+    <meta name="theme-color" content="#ffffff">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110082869-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag= function() {dataLayer.push(arguments);}
+  window.gtag('js', new Date());
+
+  window.gtag('config', 'UA-110082869-1');
+</script>
+
+  </head>
+  <body>
+     
+    <div id="hidden-text-target" style="display: none;">
+      <?php echo htmlspecialchars($share_text); ?>
+    </div>
+    <div id="hidden-notification-target" style="display: none;">
+      <?php echo htmlspecialchars($notification_text); ?>
+    </div>
+    <div class="uk-padding-remove-horizontal">
+      <div class="ac-article-tree top uk-animation-slide-top">
+        <img src="../../assets/svg/tree_min.svg" alt="" />
+      </div>
+      <div class="uk-container uk-container-small">
+        <?php if($show) : ?>
+        <article class="ac-article uk-article">
+          <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
+          <h1 class="ac-title uk-article-title">
+            <a class="uk-link-reset" href="">Squirrel Talk with Data Journalist John Burn-Murdoch
+            </a>
+          </h1>
+          <p class="uk-margin-remove-top uk-article-meta">by 
+            <a href="#author-box" uk-scroll>
+              <?= $author_name?>
+            </a>
+          </p>
+          <p><strong>Telling stories with data is absolutely nothing new for data journalist John Burn-Murdoch. Starting with an initial six week spell with The Guardian, he now works in the interactive news team of the Financial Times. With Journocode, he talked about data journalism and his work.</strong></p>
+          <div class="ac-box-container">
+            <img src="assets/teaser.png" alt="">
+          </div>
+          <p class="uk-text-lead ac-text-heading">Journocode: What do you think is the most important task of data journalism?<br>
+          John:</p>
+          <p>It's very easy as a data journalist to get hung up on the data and the tools. These are the tangible elements that differentiate data journalism from other forms of journalism, after all. But this mindset risks focusing more on process than product, more on spreadsheets than stories. Ultimately, if my time as a data journalist has taught me anything, it's that the common ingredient in all of the work that I'm most proud of — and, more importantly, that readers have most appreciated — is the quality of using data to help people better understand the issues that matter to them. In this sense, data journalism is no different to any other form of journalism. A good news story makes people aware of something they didn't previously know. A good feature takes something people may already have been superficially aware of, and adds the depth and context that lead to a fuller understanding of the issue. Both of these goals can be achieved with or without data, so for me, the role of data journalism is to discover and communicate the stories and issues that are best found and told with the aid of data.</p>
+          <p class="uk-text-lead ac-text-heading">Journocode: What skills should a data journalist/data journalism team have? What does an ideal team look like?<br>John:</p>
+          <p>Specialists in obtaining, analysing and visualising data are all star players in a data journalism team, but I can't stress enough that the single vital ingredient is good ideas. Whether these come from somebody on the data team or elsewhere in the newsroom, the key is that there is one or more person who really gets what a good data story is, and can consistently come up with them. At the FT I'm fortunate to work with a fantastic immediate data team but also some brilliant, data-savvy reporters and correspondents, who understand when data can bring value to a story and — almost as important — when it can't. The time, effort and cost of assembling the most technically and creatively talented team in the world would all be for nothing if they didn't have the stories and features on which to bring their talents to bear.</p>
+          <p class="uk-text-lead ac-text-heading">Journocode: What are the most important tools you use in your work?<br>John:</p>
+          <p>Technical skills and tools are a huge advantage, but it is important to understand that they are ultimately force multipliers, expediting or broadening the fundamental process of journalism. To put it another way, <a target='_blank' href='https://ftalphaville.ft.com/2017/11/17/2195865/heres-what-we-learned-from-ordering-213-curries-at-wetherspoons/'>a good story told using "only" Google Sheets</a> is better than a weak story told using Node.js, R and d3. To be clear — I'm a fanatical user of R and d3, and wish I was better at writing Node scripts, but the quick hit of self-satisfaction I might get from solving a coding problem or adding a visual flourish is nothing compared to deep sense of fulfilment that comes with using data to leave someone more knowledgeable about the world.</p>
+          <p class="uk-text-lead ac-text-heading">Journocode: Without what can you on no account start working in the morning?<br>John:</p>
+          <p>Strong coffee.</p>
+          <p class="uk-text-lead ac-text-heading">Journocode: How long do you work on average on a project?<br>John:</p>
+          <p>Anything from a few hours to a few months!</p>
+          <p class="uk-text-lead ac-text-heading">Journocode: Are you inspired by projects of colleagues from home and abroad? Or do you find your ideas elsewhere?<br>John:</p>
+          <p>No idea is created from nothing, and if I really think about it, I probably owe large cheques to dozens of people in journalism and beyond, whose stories, podcasts or casual conversations have sparked — if not delivered wholesale — ideas of my own. I try to read and listen to as much as possible on the topics that I cover, and to bounce ideas off specialists in those fields. Even when it's difficult, obtaining the data is usually the easiest part of data journalism, so I place a huge value on the more qualitative work of developing a deep understanding of the issues that I will then use data to highlight or explain.</p>
+
+          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
+          <hr class="uk-margin uk-margin-large-top">
+          <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
+            <div class="ac-addition uk-clearfix">
+            <div class="ac-badge uk-margin-small-top uk-inline uk-text-center uk-border-rounded">
+              <span uk-icon="icon: users; ratio: 1.7">
+              </span>
+              <br>
+              <span>Views 
+                <?php echo  number_format($count)?>
+              </span>
+            </div>
+            <div class="uk-float-right">
+              <a href="#" class="twitter-share">
+                <svg class="tw-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 96"  width="57" height="79" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <filter id="inactive-a" width="156.1%" height="132.9%" x="-28.1%" y="-10.1%" filterUnits="objectBoundingBox">
+                      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+                      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.491111866 0"/>
+                      <feMerge>
+                        <feMergeNode in="shadowMatrixOuter1"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                    <path id="inactive-b" d="M0 0h13.87v9.45H0z"/>
+                    <path id="inactive-c" class="icon-bg" d="M28.46 56.68c15.7 0 28.45-12.7 28.45-28.34S44.2 0 28.5 0C12.74 0 0 12.7 0 28.34 0 44 12.74 56.68 28.46 56.68z"/>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" filter="url(#inactive-a)" transform="translate(12 4)">
+                    <rect width="2.85" height="12.28" x="27.03" fill="#4A4A4A" rx="1.42"/>
+                    <g stroke-linejoin="round" transform="translate(21.342 11.809)">
+                      <use fill="#FFFBC3" xlink:href="#inactive-b"/>
+                      <path stroke="#1A1A1A" stroke-width="5" d="M-2.5-2.5h18.87v14.45H-2.5z"/>
+                    </g>
+                    <path fill="#E1DC9B" d="M28.47 11.8h7.13v9.46h-7.13z"/>
+                    <g transform="translate(0 21.256)">
+                      <use fill="#50CBE3" xlink:href="#inactive-c" class="icon-bg"/>
+                      <path stroke="#1C1C1C" stroke-width="6" d="M28.46 59.68C11.1 59.68-3 45.65-3 28.34-3 11.04 11.1-3 28.46-3 45.83-3 59.9 11.03 59.9 28.34c0 17.3-14.07 31.34-31.44 31.34z"/>
+                      <path fill="#FFF" style="pointer-events: none;" fill-rule="nonzero" d="M43 21.53c-1.07.48-2.2.8-3.42.94 1.23-.74 2.17-1.9 2.62-3.3-1.17.7-2.45 1.2-3.78 1.45-1.08-1.15-2.63-1.88-4.34-1.88-3.3 0-5.95 2.67-5.95 5.95 0 .43.05.9.15 1.32-4.94-.25-9.33-2.62-12.26-6.22-.5.9-.8 1.9-.8 3 0 2.07 1.05 3.9 2.64 4.96-.94-.03-1.87-.3-2.7-.75v.1c0 2.9 2.06 5.3 4.78 5.84-.5.14-1.03.2-1.57.2-.38 0-.76-.03-1.12-.1.76 2.37 2.96 4.1 5.56 4.14-2 1.6-4.6 2.54-7.35 2.54-.48 0-.95-.02-1.42-.07 2.64 1.7 5.77 2.67 9.13 2.67 10.94 0 16.93-9.04 16.93-16.9 0-.26 0-.52-.03-.77 1.16-.85 2.17-1.9 2.97-3.1z"/>
+                    </g>
+                  </g>
+                </svg> 
+              </a>
+              <a href="#" class="facebook-share">
+                <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 96"  width="57" height="79" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <filter id="inactive-a" width="156.1%" height="132.9%" x="-28.1%" y="-10.1%" filterUnits="objectBoundingBox">
+                      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+                      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.491111866 0"/>
+                      <feMerge>
+                        <feMergeNode in="shadowMatrixOuter1"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                    <path id="inactive-b" d="M0 0h13.87v9.45H0z"/>
+                    <path id="inactive-c" class="icon-bg" d="M28.46 56.68c15.7 0 28.45-12.7 28.45-28.34S44.2 0 28.5 0C12.74 0 0 12.7 0 28.34 0 44 12.74 56.68 28.46 56.68z"/>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" filter="url(#inactive-a)" transform="translate(12 4)">
+                    <rect width="2.85" height="12.28" x="27.03" fill="#4A4A4A" rx="1.42"/>
+                    <g stroke-linejoin="round" transform="translate(21.342 11.809)">
+                      <use fill="#FFFBC3" xlink:href="#inactive-b"/>
+                      <path stroke="#1A1A1A" stroke-width="5" d="M-2.5-2.5h18.87v14.45H-2.5z"/>
+                    </g>
+                    <path fill="#E1DC9B" d="M28.47 11.8h7.13v9.46h-7.13z"/>
+                    <g transform="translate(0 21.256)">
+                      <use fill="#4A90E2" xlink:href="#inactive-c" class="icon-bg"/>
+                      <path stroke="#1C1C1C" stroke-width="6" d="M28.46 59.68C11.1 59.68-3 45.65-3 28.34-3 11.04 11.1-3 28.46-3 45.83-3 59.9 11.03 59.9 28.34c0 17.3-14.07 31.34-31.44 31.34z"/>
+                      <path fill="#FFF" style="pointer-events: none;" fill-rule="nonzero" d="M31.62 46.4V29.94h5.52l.83-6.43h-6.35v-4.1c0-1.83.52-3.1 3.18-3.1h3.4v-5.74c-.6-.08-2.6-.26-4.95-.26-4.9 0-8.25 3-8.25 8.5v4.72h-5.53v6.44H25V46.4h6.62z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        <hr class="uk-margin uk-margin-large-bottom">
+        <!--<div class="ac-box-container ac-share-container uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-panel uk-margin">
+<span>Share On</span> 
+</div>-->
+        <div>
+          <div id="author-box" class="uk-card uk-panel uk-card-default uk-padding-small uk-margin uk-card-body ac-box-container">
+            <h2 class="uk-margin-remove-vertical">About
+            </h2>
+            <h3 class="uk-card-title uk-margin-remove-top uk-margin-small-bottom">
+              <?=$author_name?>
+            </h3>
+            <div class="uk-margin-small uk-clearfix">
+              <a target="_blank" href="https://twitter.com/<?= $author_tw ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link" uk-icon="icon: twitter;ratio:1.4" <?php echo IsNullOrEmptyString($author_tw)?"hidden":"" ?> >
+              </a>
+              <a target="_blank" href="https://www.facebook.com/<?= $author_fb ?>" class="uk-float-left  uk-margin-remove-bottom  uk-icon-link " uk-icon="icon: facebook;ratio:1.4" <?php echo IsNullOrEmptyString($author_fb)?"hidden":"" ?> >
+              </a>
+              <a target="_blank" href="<?= $author_homepage ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link " uk-icon="icon: link;ratio:1.6" <?php echo IsNullOrEmptyString($author_homepage)?"hidden":"" ?> >
+              </a>
+            </div>
+            <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
+              <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
+            </div>
+            <p>John Burn-Murdoch, 29, is a senior data visualisation journalist at the Financial Times, where he uses statistical analysis and graphics to find and tell stories on a range of subjects including politics, demographics and sports.</p><p>Before joining the FT in 2013, John was a data journalist with the Guardian's Datablog, which he joined after studying geography at Durham University and completing a master's degree in interactive journalism at City University, London.
+          </p>
+          </div>
+        </div>
+        <div class="ac-article-spacer uk-margin-top">
+          <img class="uk-align-center" id="snow-flake" src="../../assets/svg/snow-flake_min.svg" alt="snow flake" />
+        </div></article>
+        <?php else : ?>
+        <script>
+          window.gtag('event', 'too_early', { 'event_category': 'error','event_label':'Visited Page too early' + encodeURIComponent(location.href) });
+        </script>
+        <div class="uk-text-center">
+          <h3>Oops, you are too early!
+          </h3>
+          <p>This surprise will be available on 
+            <span class="uk-text-bold">December 
+              <?= $dir_num ?>, 2017 00:00 CET 
+            </span>
+          </p>
+          <p>You can go to the newest treat by clicking 
+            <a href="<?=$door_url?>">here...
+            </a>
+          </p>
+        </div>
+        <?php endif ; ?>
+      </div>
+    </div>
+    <div>
+      <div class="ac-article-tree uk-width-1-1 uk-inline">
+        <img src="../../assets/svg/tree_min.svg" alt=""  class="down"/>
+        <div class="hj-impressum uk-section uk-padding-small uk-padding-remove-bottom ">
+          <div class="uk-container uk-container-small uk-text-center">
+            <div class="uk-margin-small">
+              <a href="http://journocode.com/imprint/" class="uk-margin-right">Imprint
+              </a>
+              <a href="http://journocode.com/dataprivacy/">Data Privacy 
+              </a>
+            </div>
+            <div class="uk-margin-small">
+              <a target="_blank" href="https://twitter.com/journocode" class="uk-icon-link uk-margin-small-right" uk-icon="icon: twitter;ratio:1.4">
+              </a>
+              <a target="_blank" href="https://www.facebook.com/journocode" class="uk-icon-link uk-reverse" uk-icon="icon: facebook;ratio:1.4">
+              </a>
+            </div>
+            <div>
+              <span class="hj-copyright">© 2017 Journocode 
+                <br>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="../../dist/bundle.js">
+    </script>
+  </body>
+</html>

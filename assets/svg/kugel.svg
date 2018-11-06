@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="338" height="408">
+  <g id="kugel" fill="none" fill-rule="evenodd" filter="url(#kugel-a)" transform="translate(26)">
+      <defs>
+    <filter id="kugel-a" width="127.6%" height="118.5%" x="-13.8%" y="-3.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="15" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <ellipse id="kugel-b" cx="142.87" cy="142.62" rx="142.87" ry="142.62"/>
+    <path id="kugel-c" d="M104 49h76.8v30.72H104z"/>
+  </defs>
+    <g transform="translate(0 82)">
+      <use fill="#08AAAE" xlink:href="#kugel-b"/>
+      <ellipse cx="142.87" cy="142.62" stroke="#282828" stroke-width="14" rx="149.87" ry="149.62"/>
+      <path fill="#28CDD1" d="M177.4 267c59.83 0 108.33-56.86 108.33-127S237.23 13 177.4 13s45.46 52.35 45.46 122.5c0 70.13-105.3 131.5-45.47 131.5z"/>
+    </g>
+    <use fill="#9B9B9B" xlink:href="#kugel-c"/>
+    <path stroke="#282828" stroke-width="14" d="M111 56h62.8v16.72H111z"/>
+    <rect width="18.43" height="58.38" x="134" fill="#282828" rx="9.22"/>
+  </g>
+</svg>
