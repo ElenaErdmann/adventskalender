@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Lorenz Matzat";
-$author_tw="lorz";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
-$author_homepage="https://editor.lokaler.de/";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Algorithmic Accountability is the next step for data journalism";
-$description="What's next for Data Journalism? Lorenz Matzat explains, why Algorithmic Accountability is a sub-genre of DDJ in the making.";
-$share_text="What's next for #ddj? As today's @journocode advent calendar surprise, @lorz explains why Algorithmic Accountability is a sub-genre of #ddj in the making.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/17/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/17/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Algorithmic Accountability is the next step for data journalism
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -191,10 +191,16 @@ debug((string)$count,$DEBUG );
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>Algorithmic Accountability is a sub-genre of data journalism in the making. The term got established by the American journalism researcher Nicholas Diakopoulos. His report <a target='_blank' href='https://towcenter.org/research/algorithmic-accountability-on-the-investigation-of-black-boxes-2/'>"Algorithmic Accountability Reporting: On the Investigation of Black Boxes"</a> was published in the beginning of 2014. It outlines a new task for journalists: They must understand software systems as objects for investigations. In this, mere transparency can’t be the goal - often it doesn’t help to have a look at the software code of so called artificial intelligence or machine learning. Without the data these systems are trained on, their workings can’t be understood. Thus Algorithmic Accountability thrives for intelligibility.</p>
-          <p>Different to the „traditional“ data journalism, which operates with sets of manual or automated gathered data, Algorithmic Accountability cares about how data is processed and/or generated. A fine example is the work by Pro Publica in its series "Machine Bias" from 2016. Among others the newsroom did research on <a target='_blank' href='https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing'>a software widely used in court rooms across the US to determine if an offender should get parole</a>. It found that the software was reproducing racism. The responsible private software company was not willing to shed light on how its software product was operating in detail. Pro Publica aquired data on offenders of a county by a Freedom of Information request and kind of reverse engineered the software system in question.</p>
-          <p>Algorithmic Accountability is a logical next step for data journalism in world of Automated Decision Making (ADM): Democratic societies which are more and more relying on governance by and with software have to be able to understand and control these "machines".</p> 
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -292,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Lorenz Matzat is the co-founder of the NGO <a target='_blank' href='https://algorithmwatch.org/'>AlgorithmWatch</a>. 
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -308,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

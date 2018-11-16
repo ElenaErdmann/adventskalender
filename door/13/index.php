@@ -16,21 +16,20 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Joe Germuska";
-$author_tw="JoeGermuska";
+$author_name="David Hilzendegen";
+$author_tw="dahilzen";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Tell the story behind the numbers with StoryLineJS";
-$description="StorylineJS helps you tell the story behind your data. For our #ddjadvent calendar, Joe Germuska from Northwestern University Knight Lab tells the story behind the tool.";
-$share_text="StorylineJS helps you tell the story behind your data. For our #ddjadvent calendar, @JoeGermuska from Northwestern University Knight Lab tells the story behind the tool.";
- 
+$site_name="Journocode Advent Calendar 2018";
+$title="Squirrel Talk with David Hilzendegen";
+$description="xxx";
+$share_text="xxx";
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +105,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/13/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/6/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/13/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/6/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +146,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,25 +179,61 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Tell the story behind the numbers with StoryLineJS 
+            <a class="uk-link-reset" href="">Squirrel Talk with Data Journalist David Hilzendegen
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
             <a href="#author-box" uk-scroll>
               <?= $author_name?>
-            </a>
+            </a> and Journocode
           </p>
-          <p><strong><a target='_blank' href='https://knightlab.northwestern.edu/'>Northwestern University Knight Lab</a> is a community of designers, developers, students, and educators working on experiments designed to push journalism into new spaces, probably best known for their tools for media makers. The newest beeing StoryLineJS.</strong></p>
-          <div class="ac-box-container">
-            <img src="assets/teaser.png" alt="">
-          </div>
-          <p>For some time now, friends and fans of Knight Lab have asked us to make a tool that helps them tell stories with data. We were reluctant to make a general purpose chart builder, but as we analyzed the problem we recognized an opportunity that fit our sweet spot. A few months ago, we announced the general release of our latest tool, <a target='_blank' href='http://storyline.knightlab.com/'>StorylineJS</a>.</p>
-          <p>In many ways, StorylineJS resembles our popular tools, <a target='_blank' href='http://timeline.knightlab.com/'>TimelineJS</a> and <a target='_blank' href='https://storymap.knightlab.com/'>StoryMapJS</a> (although I promise, we didn’t just mash those names together and then look for a tool to fit!). Like those, it allows you to attach “slides” to each key point in your story, where you can explain its relevance. </p>
-          <p>Unlike TimelineJS and StoryMapJS, StorylineJS slides don’t have media. In our development process, we put a very high priority on a good mobile/small-screen experience, and in our design research, we haven’t found a solution which integrated images or other media elegantly.</p>
-          <p>This is just one way in which we’ve intentionally limited the options to keep storylines simple for authors to make and for the audience to read. We also only support single line time-series charts, and in the first release, the color is not configurable. </p>
-          <img src="assets/embed.png" alt="">
-          <p>As always, we look to our community to let us know what works well and where things could be improved or expanded. And, of course, we’d love to see what you make! You can <a target='_blank' href='https://twitter.com/knightlab'>tweet to us</a>, connect on <a target='_blank' href='https://www.facebook.com/knightlab/'>Facebook</a>, or contact us via our <a target='_blank' href='https://knightlab.zendesk.com/'>ZenDesk support system</a> if you’d like to share your work, or any feedback about the tool.</p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p><strong>xxx</strong></p>
+          <p class="uk-text-lead ac-text-heading">What tools do you use to manipulate, edit and handle data?<br>
+          </p>
+          <p>Most of the time I use the iconic trio: Pandas, Numpy, Matplotlib. For interactive visualisations I use Leaflet for maps and D3.js for the rest. For further designing purposes I use Sketch.</p>
+          <p>In the beginning these tools are hard to learn, especially D3. But it is worth investing time. Because in the end you can work, analyze, and style however you want without restrictions.</p>
+          <p>I try to avoid using commercial tools like Carto or Infogram. I think it is important to have an own look and feel that fits the topic and that can distinguish your work from others. Furthermore, there is no guarantee that commercial tools will still exist in three oder six months, your own code surely will.</p>
+         <p class="uk-text-lead ac-text-heading">Should journalists learn how to code?<br>
+          </p>
+          <p>Short answer: YES!</p>
+          <p>Long answer: No, but I think it is important to know the possibilities we have in terms of data procurement, data analysis, data visualization and storytelling. In my opinion every modern journalist should at least have an idea of coding and should be able to identify javascript whenever he or she sees it.</p>
+           <p class="uk-text-lead ac-text-heading">Do you work with Excel? Or do you avoid it?<br>
+          </p>
+          <p>Personally, I avoid Excel. But I teach it to our trainees and in my courses. I think it is a good start to get in touch with analysis and visualization - as long as you don’t publish Excel-Charts….</p>
+          <p class="uk-text-lead ac-text-heading">Working with data can be time consuming. How do you judge if it is worthwhile to do a data project?<br>
+          </p>
+          <p>I don’t understand the question. Are there any good reasons at all to not start an interesting data project?</p>
+          <p class="uk-text-lead ac-text-heading">Suppose I’m the only person in my newsroom who knows about data or how to code. What can I do?<br>
+          </p>
+          <p>Welcome to my world… My solution: Work work work. Go in advance, scrape, code, visualize, fail, learn, do better. Then show it to some colleagues who are working on beats your topic is about. Most will be impressed and you can discuss how you can improve and how they can cover your work. </p>
+          <p>Because the most important thing is: We are journalists and we should use data in a journalistic way. It is not our duty to visualize for the sake of visualizing. </p>
+          <p>The second important thing is: Data journalists aren't there to prettify articles. You’d better look for a real project you are working on... even if sometimes you have to do it after work. </p>
+          <p class="uk-text-lead ac-text-heading">What does the daily work routine look like for you in the Heilbronner Stimme data team?<br>
+          </p>
+          <p>You mean the one-person-data-team I am? There is one big advantage to be the only data journalist in the newsroom: I can work on every topic I want whenever I want. </p>
+          <p>Most of the time I have two or three smaller projects I am working on. Often I stop projects because it turns out that there is no interesting story in the data and certainly not the story I was hoping to find. Sometimes there is another dataset which is way more interesting to me (Yeah, i am really trying to get better organized. But there is so much data...).</p>
+          <p>So most of the time of my workday I am searching for data that covers ideas I got. After data processing the day is mostly over. Because that’s the minor romantic part of data journalism: Data wrangling takes a lot of time. A. Lot. Of. Time.</p>
+          <p>At the moment I am working on a Machine-Learning-Project which is totally new to me. So right now i read lots of tutorials and blogs, try stuff myself, fail and start again. (Gosh, I hope my editor in chief doesn’t read this....)</p>
+          <p class="uk-text-lead ac-text-heading">Which of your data projects are you most proud of? What didn’t work out so well? And which project was most well received by the readers?<br>
+          </p>
+          <p>I think our particulate-matter-project was very good (https://projekte.stimme.de/feinstaub/). My colleague Lisa Reiff and myself have built a measuring network in Heilbronn. We have assembled measuring devices and distributed them to our readers. In cooperation with the local university we created a platform where our readers could check the live-data. Afterwards we made a big analysis and isolated five learnings.</p>
+          <p>Our readers really liked the outcome. We had many readers and an average reading time way beyond our usual value. At times it was nearly five minutes, which is bombastic for my newsroom.</p>
+          <p>Analyzing commuter flows was much fun as well, especially the visualization in this cobweb-way (https://projekte.stimme.de/pendler/). The project was the start of a series of articles about commuter and traffic in and around Heilbronn.</p>
+          <p>“Stadt, Land, Krank” didn’t work out that well because i wanted too much. (http://aerzte.stimme.de/) It was my first big scrollytelling attempt and I wanted to do it like pudding.cool. I still like the project and on my Mac and my iPhone it works like a charm. But it turned out that it is a little too heavy for the usual cellphone-user or older computers. </p>
+          <p>The quantitative and qualitative values where still good though. So I guess it is ok to just try out and do mistakes. As I said before: code, visualize, fail, learn, do better.</p>
+          <p class="uk-text-lead ac-text-heading">How far does your newsroom support you in the development of data journalistic formats? <br>
+          </p>
+          <p>As I said before: It is great that I have the freedom to just do whatever I am interested in. So I guess giving me enough time is the main contribution of my newsroom.</p>
+          <p class="uk-text-lead ac-text-heading">And what do you expect from your newsroom? <br>
+          </p>
+          <p>Sometimes I wish my colleagues would approach me more often on their own. But I think that's difficult with all the time problems that are typical for local newspapers.</p>
+          <p class="uk-text-lead ac-text-heading">Does data journalism have a future in small local newsrooms? <br>
+          </p>
+          <p>Do small newsrooms have a future without data journalism?</p>
+
+
+
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -296,8 +331,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Joe Germuska is the Executive Director of the Northwestern University Knight Lab, although he prefers the title "Chief Nerd." He is also the project lead on Census Reporter, a Knight News Challenge project to make U.S. Census data easy for journalists to use. Before joining the Knight Lab, Joe was a founding member of the news applications team at the Chicago Tribune and a project board member for the PANDA project, another Knight News Challenge winner.</p><p>For fun, every Tuesday Joe gets up well before dawn to host "Conference of the Birds," an eclectic music radio program on WNUR-FM.
-          </p>
+            <p>xxx</p>
           </div>
         </div>
         <div class="ac-article-spacer uk-margin-top">
@@ -312,7 +346,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

@@ -16,24 +16,25 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Journocode";
-$author_tw="journocode";
-$author_fb="Journocode";
-$author_homepage="http://www.journocode.com";
+$author_name="xxx";
+$author_tw="xxx";
+$author_fb="";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Nerd Word Puzzle";
-$description="Cross word puzzles meet data  jargon. Good luck!";
-$share_text="A map with colored areas, 10 letters. Got it? Then try your hand on 13 more #ddj words in today’s @journocode Advent Calendar puzzle surprise!";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
+ 
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
-$date2 = new DateTime("2017-11-00");
+$date2 = new DateTime("2017-12-00");
 function debug($data,$DEBUG) {
 if($DEBUG){
 if(is_array($data) || is_object($data)){
@@ -105,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/4/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/4/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -146,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -160,104 +161,6 @@ debug((string)$count,$DEBUG );
 
   window.gtag('config', 'UA-110082869-1');
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="js/jquery.crossword.js"></script>
-  <script src="js/script.js"></script>
-  <style type="text/css" media="screen">
-    /*
-    Default puzzle styling
-  */
-    table { 
-      border-collapse: collapse; 
-      border-spacing: 0; 
-      max-width: 100%;
-    }
-    table tr{
-      width: 100%;
-    }
-    table td {
-      width: 2em;
-      height: 2em;
-      border: 1px solid #cdcdcd;
-      padding: 0;
-      margin: 0;
-      background-color: #333;
-      position: relative;
-    }
-        
-    td input {
-      width: 100%;
-      height: 100%;
-      padding: 0em;
-      border: none;
-      text-align: center;
-      font-size: 1.2em;
-      color: #666;
-      background-color: #f4f4f4;
-    }
-    
-    td input:focus {
-      background-color: #fff;
-    }
-    
-    td span {
-      color: #444;
-      font-size: 0.8em;
-      position: absolute;
-      top: -1px;
-      left: 1px;
-    }
-    
-    input.done {
-      color: green;
-    }
-    
-    .active,
-    .clues-active {
-      background-color: #ddd;
-    }
-    .clue-done {
-      color: #999;
-      text-decoration: line-through;
-    }
-    
-    #puzzle-wrapper {
-      float: left;
-      width: 60%;
-      margin-right: 0%;
-    }
-    #puzzle-clues {
-      float: left;
-      width: 40%;
-    }
-    
-    #puzzle-clues li{
-      font-size: 0.8em;
-      margin: .3em;
-      line-height: 1.6em;
-    }
-
-    @media(max-width: 768px) {
-    #puzzle-clues li{
-      font-size: 0.8em;
-      margin: .3em;
-      line-height: 1.6em;
-    }
-
-    #puzzle-clues {
-      float: left;
-      width: 100%;
-    }
-
-    #puzzle-wrapper {
-      float: left;
-      width: 100%;
-      margin-right: 0%;
-    }
-        
-}
-    
-  </style>
 
   </head>
   <body>
@@ -277,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Nerd Word Puzzle
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -285,15 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p>Dear data-driven person,</p>
-          <p>today, we brought you a little game: A crossword puzzle – but a special one: All the words are data- or coding-related. But don’t worry: If you get stuck, just check out our <a target='_blank' href='http://www.journocode.com/data-journalism-dictionary'>Data Journalism Dictionary</a>.<br>
-          You might find some helpful tips. That’s not cheating, that’s learning, and we’re all about that!</p>
-          <p>Try the puzzle right here or download it as a <a target='_blank' href='4_nerd-word-puzzle.pdf'>PDF Document</a>.</p>
-          <p>Best,</p>
-          <p>The Squirrels
-          </p>
-          <div id="puzzle-wrapper"><!-- crossword puzzle appended here --></div>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <div class="ac-box-container">
+            <img src="assets/teaser.png" alt="">
+          </div>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -391,16 +298,14 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Journocode is a group of journalists, designers and computer scientists working in newsrooms across Germany. Founded on the idea of shared knowledge, Journocode is a platform for all your data-driven needs.</p><p>We offer free resources on our website for anyone interested in telling stories with data and provide <a target='_blank' href='http://workshops.journocode.com/'>workshops</a> and talks for newsrooms wanting to expand their journalistic methods. You can say hi to us via Twitter, Facebook, Email or our open <a target='_blank' href='https://journocode-slack.herokuapp.com/'>Slack Team</a>.
+            <p>xxx  
           </p>
           </div>
         </div>
         <div class="ac-article-spacer uk-margin-top">
           <img class="uk-align-center" id="snow-flake" src="../../assets/svg/snow-flake_min.svg" alt="snow flake" />
-        </div>
-        </article>
+        </div></article>
         <?php else : ?>
-
         <script>
           window.gtag('event', 'too_early', { 'event_category': 'error','event_label':'Visited Page too early' + encodeURIComponent(location.href) });
         </script>
@@ -409,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

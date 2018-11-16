@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="John Burn-Murdoch";
-$author_tw="jburnmurdoch";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Squirrel Talk with Data Journalist John Burn-Murdoch";
-$description="Data Journalist John Burn-Murdoch talked about Data Journalism and his work.";
-$share_text="Data Journalist @jburnmurdoch talked to @journocode about #ddj and his work.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/23/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/23/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Squirrel Talk with Data Journalist John Burn-Murdoch
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,25 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>Telling stories with data is absolutely nothing new for data journalist John Burn-Murdoch. Starting with an initial six week spell with The Guardian, he now works in the interactive news team of the Financial Times. With Journocode, he talked about data journalism and his work.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p class="uk-text-lead ac-text-heading">Journocode: What do you think is the most important task of data journalism?<br>
-          John:</p>
-          <p>It's very easy as a data journalist to get hung up on the data and the tools. These are the tangible elements that differentiate data journalism from other forms of journalism, after all. But this mindset risks focusing more on process than product, more on spreadsheets than stories. Ultimately, if my time as a data journalist has taught me anything, it's that the common ingredient in all of the work that I'm most proud of — and, more importantly, that readers have most appreciated — is the quality of using data to help people better understand the issues that matter to them. In this sense, data journalism is no different to any other form of journalism. A good news story makes people aware of something they didn't previously know. A good feature takes something people may already have been superficially aware of, and adds the depth and context that lead to a fuller understanding of the issue. Both of these goals can be achieved with or without data, so for me, the role of data journalism is to discover and communicate the stories and issues that are best found and told with the aid of data.</p>
-          <p class="uk-text-lead ac-text-heading">Journocode: What skills should a data journalist/data journalism team have? What does an ideal team look like?<br>John:</p>
-          <p>Specialists in obtaining, analysing and visualising data are all star players in a data journalism team, but I can't stress enough that the single vital ingredient is good ideas. Whether these come from somebody on the data team or elsewhere in the newsroom, the key is that there is one or more person who really gets what a good data story is, and can consistently come up with them. At the FT I'm fortunate to work with a fantastic immediate data team but also some brilliant, data-savvy reporters and correspondents, who understand when data can bring value to a story and — almost as important — when it can't. The time, effort and cost of assembling the most technically and creatively talented team in the world would all be for nothing if they didn't have the stories and features on which to bring their talents to bear.</p>
-          <p class="uk-text-lead ac-text-heading">Journocode: What are the most important tools you use in your work?<br>John:</p>
-          <p>Technical skills and tools are a huge advantage, but it is important to understand that they are ultimately force multipliers, expediting or broadening the fundamental process of journalism. To put it another way, <a target='_blank' href='https://ftalphaville.ft.com/2017/11/17/2195865/heres-what-we-learned-from-ordering-213-curries-at-wetherspoons/'>a good story told using "only" Google Sheets</a> is better than a weak story told using Node.js, R and d3. To be clear — I'm a fanatical user of R and d3, and wish I was better at writing Node scripts, but the quick hit of self-satisfaction I might get from solving a coding problem or adding a visual flourish is nothing compared to deep sense of fulfilment that comes with using data to leave someone more knowledgeable about the world.</p>
-          <p class="uk-text-lead ac-text-heading">Journocode: Without what can you on no account start working in the morning?<br>John:</p>
-          <p>Strong coffee.</p>
-          <p class="uk-text-lead ac-text-heading">Journocode: How long do you work on average on a project?<br>John:</p>
-          <p>Anything from a few hours to a few months!</p>
-          <p class="uk-text-lead ac-text-heading">Journocode: Are you inspired by projects of colleagues from home and abroad? Or do you find your ideas elsewhere?<br>John:</p>
-          <p>No idea is created from nothing, and if I really think about it, I probably owe large cheques to dozens of people in journalism and beyond, whose stories, podcasts or casual conversations have sparked — if not delivered wholesale — ideas of my own. I try to read and listen to as much as possible on the topics that I cover, and to bounce ideas off specialists in those fields. Even when it's difficult, obtaining the data is usually the easiest part of data journalism, so I place a huge value on the more qualitative work of developing a deep understanding of the issues that I will then use data to highlight or explain.</p>
-
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -304,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>John Burn-Murdoch, 29, is a senior data visualisation journalist at the Financial Times, where he uses statistical analysis and graphics to find and tell stories on a range of subjects including politics, demographics and sports.</p><p>Before joining the FT in 2013, John was a data journalist with the Guardian's Datablog, which he joined after studying geography at Durham University and completing a master's degree in interactive journalism at City University, London.
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -320,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

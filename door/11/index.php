@@ -16,20 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Lisa Charlotte Rost";
-$author_tw="lisacrost";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
-$author_homepage="http://lisacharlotterost.de/";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Squirrel Talk with DataViz designer Lisa Charlotte Rost";
-$description="Lisa Charlotte Rost from Datawrapper talks about her work – in graphics.";
-$share_text="@lisacrost from @Datawrapper talks about her work – in graphics.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
+ 
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -105,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/11/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/11/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -146,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -179,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Squirrel Talk with DataViz designer Lisa Charlotte Rost
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -187,32 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <img src="assets/lisa2.png" alt="">
-          <p>The Journo Squirrels had some questions for me to fill their fabulous Christmas calendar. Here are my answers: </p>
-          <p class="uk-text-lead ac-text-heading">What do you need to work?</p>
-            <p>1. Food! Christmas is perfect to stuff all the great food things in one’s mouth. In the best case, in my mouth. Like cookies. I do like cookies. That’s me:</p>
-            <img src="assets/lisa3.png" alt="">
-            <p>(Believe me, I’m happy while eating all that stuff; I just failed to draw a smiling but still gigantic mouth.)</p>
-            <p>2. Tea! I love tea. It’s like water, but warm and with taste – what else do you want. Can’t argue with that. Black tea, green tea, yellow tea (meaning, Ginger & Lemon tea): I take it all.</p>
-            <img src="assets/lisa4.png" alt="">
-            <p>3. Pen & Paper! <a target='_blank' href='https://lisacharlotterost.github.io/2016/12/02/drawingthoughts/'>Still</a> a huge fan. Only when I see my thoughts drawn, I truly understand them. I think. (Haven’t drawn this thought yet.)</p>
-            <img src="assets/lisa5.png" alt="">
-            <p class="uk-text-lead ac-text-heading">What’s your favourite chart type?</p>
-            <p>Boy, I’m so glad you asked. What a great question. Currently, I adore this chart type:</p>
-            <img src="assets/lisa6.png" alt="">
-            <p>What’s awesome about it, you ask, besides that it looks like a brick wall? You can read it three ways!</p>
-            <ol>
-              <li>You can just compare the <strong>height of the rows</strong> with each other and learn e.g. about the population of different countries.</li><br>
-              <li>You can compare the length of the <strong>shares in each row</strong> with each other and can learn e.g. which countries have the most or the least share of rich people.</li><br>
-              <li>You can compare the size of the individual <strong>boxes</strong> with each other and learn e.g. which country has the most rich people in absolute terms.</li><br>
-            </ol>
-            <p>It’s basically like a tree map! But better sorted than a tree map! I’m such a fan. </p>
-            <p class="uk-text-lead ac-text-heading">How do people recognize you?</p>
-            <p>I have red glasses and I’ve had them for years now. To be frank, I’m not sure if I like them anymore. But hey, it leads to encounters like this one:</p>
-            <img src="assets/lisa7.png" alt="">
-            <p>…and these encounters make me smile. The best compliment I’ve gotten so far? “You’re one of the rare people who actually look like their Twitter profile pic.” (It might be the other way round, now that I come to think about it.)</p>
-            <p>Ok, now that I made you curious: <a target='_blank' href='https://twitter.com/'>I’m @lisacrost on Twitter</a>.<br>Happy Holidays!</p>
-            <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <div class="ac-box-container">
+            <img src="assets/teaser.png" alt="">
+          </div>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -310,7 +298,8 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Lisa Charlotte Rost is a designer at Datawrapper. She's been writing and talking about data vis for a few years now. In 2016 Lisa was an OpenNews Fellow at NPR in Washington, DC.</p><p>Based in Berlin now, she organizes the Data Vis meetup and enjoys the few sunny days.</p>
+            <p>xxx  
+          </p>
           </div>
         </div>
         <div class="ac-article-spacer uk-margin-top">
@@ -325,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

@@ -16,20 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Nadieh Bremer";
-$author_tw="NadiehBremer";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
-$author_homepage="https://www.visualcinnamon.com/";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Squirrel Talk with DataViz designer Nadieh Bremer";
-$description="Nadieh Bremer sketches the answers to our questions about her wonderful work.";
-$share_text="In today's @journocode #ddj Advent Calendar surprise, #dataviz designer @NadiehBremer talks about her work - without any words.";
+$site_name="Journocode Advent Calendar 2018";
+$title="Squirrel Talk with Marco Hernandez Solano";
+$description="xxx";
+$share_text="xxx";
+ 
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -105,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/6/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/6/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -146,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -179,28 +180,52 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Squirrel Talk with DataViz designer Nadieh Bremer
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
             <a href="#author-box" uk-scroll>
               <?= $author_name?>
-            </a> and Journocode
+            </a>
           </p>
-          <p><strong>Nadieh Bremer loves to analyze data and design infographics, often sharing the code for her beautiful creations. We asked her three questions about her work and she, well, she answered.</strong></p>
-          <p class="uk-text-lead ac-text-heading">Journocode: How do you divide your time throughout a project?<br>
-          Nadieh:<br>
-          </p>
-          <img src="assets/Nadieh1.png" alt="">
-          <p class="uk-text-lead ac-text-heading">Journocode: When is the best time for you to work?<br>
-          Nadieh:<br>
-          </p>
-          <img src="assets/Nadieh2.png" alt="">
-          <p class="uk-text-lead ac-text-heading">Journocode: What tools do you use?<br>
-          Nadieh:<br>
-          </p>
-          <img src="assets/Nadieh3.png" alt="">
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <div class="ac-box-container">
+            <img src="assets/teaser.png" alt="">
+          </div>
+          <p class="uk-text-lead ac-text-heading">What tools do you use to manipulate, edit and handle data?</p>
+          <p>I guess it depends on the project, we are not sticked to a abstract data visualisation or illustrated classic graphics, we do a little bit of everything. Just to mention some I use RAW, Tableau, Excel, Google docs, D3, CD4, QGIS, GeoJSON, Adobe CC pack ...</p>
+          <p class="uk-text-lead ac-text-heading">Should journalists learn how to code?</p>
+          <p>Let’s say it in this way, designers, coders, journalist… many times they are all same person especially in small companies. But even if you are in a big media, you need to understand the different languages to know the possibilities, contribute and develop better final products. 
+Learn the basics will make you understand the work of the others, journalist don't need to become developers, but they do need to understand them, so to know a little bit of code don’t make any harm
+</p>
+          <p class="uk-text-lead ac-text-heading">Do you work with Excel? Or do you avoid it?</p>
+          <p>Sometimes is a quick way, sometimes you don’t need it at all. 
+I believe the tool doesn’t make any difference, if you have a clear idea of what you need to tell the story behind the data, you can make it even just with paper and pencil. My advice will be spend 90% of your time thinking in the solution, leave the rest to the tool whatever it is
+</p>
+          <p class="uk-text-lead ac-text-heading">Working with data can be time consuming. How do you judge if it is worthwhile to do a data project?</p>
+          <p>In the early stages of your project, make an interview to your data.</p>
+          <ul>
+            <li>Filter it: Ask what is the most interesting part there, don’t be afraid to edit yourself</li>
+            <li>Find little stuff: The curiosities or anomalies there with some context can become in the main idea.</li>
+            <li>Give context: Make comparisons, all in simple charts to understand it, very quick…</li>
+          </ul>
+          <p>If the result is good on your judge not because the amount of time you spend but to the impact go ahead. Don’t fall in love of your analisis, just be such cruel with yourself as the editors will be, it will save you a lot of time.</p>
+          <p class="uk-text-lead ac-text-heading">Suppose I’m the only person in my newsroom who knows about data or how to code. What can I do?</p>
+          <p>Frist, don’t go crazy.<br>
+          Take the good data to work in, create one or two good projects and solve the rest with basic solutions, maybe in future you can develop the topic in deept. I prefer one good project rather than 10 badly done </p>
+          <p>Second, create your own toolkit<br>A lot of stuff can be solved by recycling components, take your time to create a nice tool kit, and encourage the people around to learn how to use it, maybe it will release time to do better stuff </p>
+          <p class="uk-text-lead ac-text-heading">What does the daily work routine look like for you in the SCMP data team?</p>
+          <p>We are a bunch of nerds doing the stuff we love the most, so every day is like go to the playground rather than another day in the office, then you now someone will pay you for it… even.</p>
+          <p class="uk-text-lead ac-text-heading">Which of your data projects are you most proud of? What didn’t work out so well? And which project was most well received by the readers?</p>
+          <p>Everytime we publish something we take a look on what we can do better for the next, so I’ll say I’ll be proud of the one we will publish tomorrow every day.</p>
+          <p>We have a few the readers get crazy, “A world of languages” is one of those, “City of anarchy” is another, and more recently the Forbidden City series, those have reached millions of reads and have become crazy on social media also</p>
+          <p class="uk-text-lead ac-text-heading">How far does your newsroom support you in the development of data journalistic formats? And what do you expect from your newsroom?</p>
+          <p>We have good support from the rest of the newsroom, they trust us. That’s tricky also because always they will have high expectations on us and no one likes to disappoint the newsroom, specially the newspaper heads…</p>
+          <p>We expect of them respect in our choices, the focus we want for each story and the freedom to express. Happily we got it and their suggestions sometimes just make our product better, and sometimes are just funny suggestions.</p>
+          <p class="uk-text-lead ac-text-heading">Does data journalism have a future in small local newsrooms?</p>
+          <p>Yes, future in journalism made by humans is go deeper, tell and show stories with an never seen focus. Not just trendy, but useful or educative. <br>I guess is like the other question above, if you are the only one doing code. Pick well you battles, create few good stories, solve the rest with your toolkit.</p>
+
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -298,7 +323,8 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Nadieh Bremer graduated as an Astronomer and then became an Analytics Consultant. While working in Data Science, she discovered her passion for data visualization and since then has been designing wonderful infographics to make her analyses easier to understand and experience. Among others, she received an Information Is Beautiful Award for her work.</p>
+            <p>xxx  
+          </p>
           </div>
         </div>
         <div class="ac-article-spacer uk-margin-top">
@@ -313,7 +339,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

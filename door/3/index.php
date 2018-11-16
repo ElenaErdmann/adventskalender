@@ -16,20 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Anim van Wyk";
-$author_tw="animvw";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Speed Dat(a)ing: This is Africa Check, by Anim van Wyk";
-$description="Africa Check uses data-driven methods to fact-check political claims of african authorities. Group editor Anim van Wyk introduces the project.";
-$share_text="@animvw introduces the fact-checking organisation @AfricaCheck in today's @journocode #ddj Advent Calendar.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
+ 
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -105,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/3/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/3/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -146,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -179,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Speed Dat(a)ing: This is Africa Check
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -187,15 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>"Fake News" is a buzzword worldwide. But it's not only a buzzword, it's also a big problem not everyone can fight. Africa Check uses data-driven methods and journalistic skills to fact-check claims made by african authorities, and encourages you to do so, too. Group editor Anim van Wyk introduces the project.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p><a target='_blank' href='https://www.africacheck.org'>Africa Check</a> – the continent's first independent fact-checking organisation – is built around publicly accessible data. We consult the best databases to fact-check claims made by leading voices in public debate in South Africa, Nigeria, Kenya and Senegal. Most frequently we rely on the national statistics offices, for instance <a target='_blank' href='https://www.google.co.za/search?q=site%3Aafricacheck.org+unemployment&oq=site%3Aafricacheck.org+unemployment&aqs=chrome..69i57j69i58j69i59.5772j0j7&sourceid=chrome&ie=UTF-8'>to gauge unemployment</a>, as well as data from various nationally representative health surveys, such as Demographic and Health Surveys. We analyse these with the help of experts and visualise what is relevant to our fact-check by using tools such as Datawrapper.
-          </p>
-          <p>In Africa, it is sometimes difficult to get hold of data on many topics and then we have to be creative. An example is <a target='_blank' href='https://africacheck.org/factsheets/factsheet-nigerias-population-figures/'>the population count of Nigeria</a>, where official census data is suspect, but research based on satellite imagery and geographic information systems can be used to cross-reference it.</p>
-          <p>But our most important mission is to ensure that we’re not the only fact-checkers around. That’s why we share sources and provide data journalism explainers to fellow journalists and the public. Anyone can and should be a fact-checker!</p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -293,14 +298,13 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Anim van Wyk is group editor of Africa Check, the continent’s leading fact-checking organisation.
+            <p>xxx  
           </p>
           </div>
         </div>
         <div class="ac-article-spacer uk-margin-top">
           <img class="uk-align-center" id="snow-flake" src="../../assets/svg/snow-flake_min.svg" alt="snow flake" />
-        </div>
-        </article>
+        </div></article>
         <?php else : ?>
         <script>
           window.gtag('event', 'too_early', { 'event_category': 'error','event_label':'Visited Page too early' + encodeURIComponent(location.href) });
@@ -310,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Steffen Kühne";
-$author_tw="stekhn";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="The Perfect Data Journalist";
-$description="Are you under 30? Do you have at least 50 years of #ddj experience? Then you might have what it takes to become the perfect data journalist! A handy guide by Steffen Kühne";
-$share_text="Are you under 30? Do you have at least 50 years of #ddj experience? Then you might have what it takes to become the perfect data journalist! A handy guide by @stehkn";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/14/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/14/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">The Perfect Data Journalist
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,18 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>What do you need to be the perfect data journalist? Here is an extensive collection of skills you need to become the human Swiss Army knife for data. If you are willing to work 48 hours a day, you’ll get the knack in no time.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>First off, the perfect data journalist is also a perfect <strong>journalist</strong>. You investigate, report and edit like no one else. Your approach to stories is not only data-driven, it’s story-driven. You spend nights and weekends sifting through folders and documents to find a good lead for your story. Your secret power is FOIA requests. Writing, filming, recording is your domain. Whether it is a news report, a big feature or an opinion piece, your stories are deep and well-crafted for any possible platform and audience. </p>
-          <p>On top of that, you are a strong <strong>leader</strong> and well-organised <strong>manager</strong>. Say what? Yes, a perfect data journalist in the 21th century also needs to manage a small army of journalists, designers and developers which, unfortunately, haven’t mastered all the awesome skills you have. You plan, you organise, you persuade and mediate. And because you speak at least five languages fluently, you are also an expert in juggling international cooperations and coordinating a worldwide network of fellow journalists. Still, with all those things to keep track of, you never lose focus on the big picture: Making a comprehensive and engaging product.</p>
-          <p>Further, to deliver best product experience, you need to be an award-winning <strong>designer</strong>. If your middle name is Kerning and your left hand is permanently glued to a drawing tablet, you are cut out for the job. The job description includes: Data visualisation, interaction design, prototyping and sketching. You should also have impeccable video and animation skills (that includes 3D, virtual reality and augmented reality). But let’s be honest: The most important thing you need to know is how to make maps. Lots of maps. Because editors love them. That’s why you need to be a <strong>cartographer</strong> as well. You are no stranger to choropleths, graticules and bathymetry and you know what makes a good map.</p>
-          <p>Cartography has many technical challenges, which you can easily master because you are also a major-league <strong>developer</strong>. Python, JavaScript and Ruby are your native languages. Whether backend or frontend or any other end, you drop the lines of code like no other. Your responsibilities are gathering data, building awe-inspiring web applications, and fixing the office fax machine. Though, you have no idea what it is actually good for. But not everything is about optimizing load speed performance, sometimes, you might have to do some data wrangling. Statistical analysis is your bread and butter. And guess what? That’s why you, on top of everything else, need to be an A-grade <strong>data scientist</strong>. You roll the R like a pirate and your wedding invitations are generated by a machine learning algorithm using your friends’ favourite Spotify songs. Your passion: Linear regression.</p>
-          <p>Besides that, you need to be a mathematician, geographer, social scientist, urban planner, licensed nurse, firefighter and con artist. Preferably, you are under 30, but have at least 50 years of work experience. You are willing to work overtime and weekends. On your days off, you visit every conference, hackathon and meetup on your continent. Naturally, you pay for tickets and travel yourself. Doing data journalism is the sole purpose of your existence.</p>
-          <p>Congratulations: If you fulfill all these requirements, you are the perfect data journalist. If not, apparently some crazy people specialize in one of these skills and work in teams. But who would want to do that?</p>
-          <p><strong>Did I forget anything? Please let me know!</strong></p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -297,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Steffen Kühne is a interactive news developer, specialized in data analysis, visualisation and storytelling. He studied journalism and a little bit of computer science. Later he joined Süddeutsche Zeitung to be trained as interactive developer.</p><p>Now he's working for the data team at Bayerischer Rundfunk – a public broadcaster located in Munich. While still thinking that data journalism can be a one-man show, he recently discovered the benefits of working in a team.
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -313,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

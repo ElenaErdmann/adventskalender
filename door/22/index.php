@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Gianna Grün";
-$author_tw="giannagruen";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="5 reasons why media outlets should invest in data journalism";
-$description="Data journalism sounds fancy, but it costs too. Why it's still worth paying designers, developers and journalists to dig through mountains of data.";
-$share_text="#ddj sounds fancy, but it costs too. Why it's still worth paying designers, developers and journalists to dig through mountains of data, by @giannagruen via @journocode";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/22/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/22/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">5 reasons why media outlets should invest in data journalism
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,18 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>The benefit of data journalism cannot necessarily be measured in clicks or likes. Its advantages are rather qualitative than quantitative – but investment will pay off, in the long run. Here's why.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <ol>
-            <li><strong>Create news instead of covering it</strong><br>By analyzing data for trends, patterns and outliers, data journalism allows you to find stories no one else has. And whereas all of your competitors source on the same news agencies as you do, data-driven stories are (at least for some time) unique to your media outlet. Data journalism can uncover story angles you didn't even know existed before and will make your company stand out from others – thereby helping you to (re)gain relevance.</li><br>
-            <li><strong>Add credibility in the age of fake news</strong><br>Being open and critical about the data you used and by making your methodology transparent so others can replicate what you did, will add to your credibility. If we want to win over Fake News we should provide our users with as much detail as possible on how our stories are formed.</li><br>
-            <li><strong>Hold the powerful accountable</strong><br>Three centuries back, the press was coined as the Forth Estate. If we want to live up to that term, data journalism can help hold the powerful accountable: Not only by following the money trail, but also by fact-checking whether policy goals are reached or whether politicians kept their promises, data can add factual arguments.</li><br>
-            <li><strong>Ask better informed questions</strong><br>Journalists too tend to believe in scientific studies or statistical reports. But data is never neutral. It's always gathered by someone (with a potential bias) for a certain purpose (with a potential intent) in a certain way (with the potential to not capture reality in its full extent). The means of data journalism allow you to find other data sources, gather your own data, re-run the analysis of others – comparing the results and challenge conclusions being made can help you make a more realistic assessment for your audience.</li><br>
-            <li><strong>FOMO: Many are doing it already</strong><br>This is a cheap argument, but if the above ones don't work, maybe we can count on your fear of missing out? Many media outlets do believe data journalism has a clear return on investment, so you need to join the game if you don't want to be left behind.</li><br>
-          </ol>  
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -297,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Gianna-Carina Gruen is a freelance data journalist, currently building Deutsche Welle's data journalism unit. She also works for the interactive background magazine "Der Kontext", where she explores non-linear storytelling.</p><p><small>(Foto: C. Schmitt)</small>
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -313,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

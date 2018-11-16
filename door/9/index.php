@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Andreas Loos";
-$author_tw="";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Germany talks";
-$description="From data journalism into the real world: Andreas Loos from Zeit Online explains how hundreds of people with opposing political opinions met through their project “Germany talks”.";
-$share_text="From #ddj into the real world: Andreas Loos from @zeitonline explains how hundreds of people with opposing political opinions met through their project “Germany talks”";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/9/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/9/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Germany talks
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -191,44 +191,16 @@ debug((string)$count,$DEBUG );
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>"Germany talks" -- this was the motto at ZEIT online in summer 2017, as
-part of the experimental new ressort D17. Our message was simple: When
-people like Donald Trump and Victor Orbán where polarizing people in
-their countries, we would try to bring people together, in controversial
-and interesting political discussions.
-</p>
-          <p>So we asked the readers of ZEIT online, if we could introduce some other
-reader to them. Those who wanted to participate in the project had to
-answer at first five yes-no-questions: Has Germany accepted too many
-refugees? Should Germany abandon the Euro and return to the Deutsche
-Mark? Is the West treating Russia fairly? Was abandoning nuclear energy
-the right move? Should homosexual couples be allowed to marry? We then
-asked for a handful of further informations: email and mobile number,
-zip code, hobbies and gender, for example.
-</p>  
-          <p>We then sent a confirmation email and a sms to the mobile number to
-check validity. If both were correctly answered, we assumed that the
-recipient really wanted to participate, and started matching.
-</p>
-          <p>Since we only had the zip code of each participant (and not the complete
-address), we estimated the spacial distance between participants by
-computing the distance between the barycenters of their zip code areas.
-If this distance was larger than 20 km, we set the distance of these two
-participants to "minus infinite" -- which meant effectively that we
-removed the corresponding edge from the emerging graph.
-</p> 
-          <p>Otherwise, we set the distance (the edge weight) of any pair of persons
-to the number of differing answers. So if, for instance, person A and B
-differed in three questions (and answered otherwise the same), they got
-distance three. We ended with a graph of half a million edges and more
-than 5500 nodes. In this graph, we computed a maximum weight matching in
-this graph using the python module networkX. The final result gave us
-2700 edges or pairs of people; only a handful could not be matched.
-</p>
-          <p>Many of them really met on June 18, 2017, 3 pm. We know, because they
-told us: in hundreds of enthusiastic emails, with hundreds of selfies.
-</p> 
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -326,7 +298,7 @@ told us: in hundreds of enthusiastic emails, with hundreds of selfies.
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Andreas Loos studied journalism, maths and physics and received his doctorate in maths. Today he works as a Science Journalist and Data Scientist for Zeit Online in Berlin. He likes to dig into the details and believes that without data you are left with nothing but an opinion. 
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -342,7 +314,7 @@ told us: in hundreds of enthusiastic emails, with hundreds of selfies.
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

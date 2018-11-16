@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Lukas Hansen";
-$author_tw="Lukas_Hansen";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Why Data Journalism can be sexy";
-$description="Data journalism newbie Lukas Hansen explains, why and how he dived into DDJ.";
-$share_text="As today's @journocode Advent Calendar surprise, @Lukas_Hansen explains why and how he dived into #ddj.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/5/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/5/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Why Data Journalism can be sexy
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,14 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>Data as a source is all good and well. But why should journalists become data literate? And, can one learn data journalism parallel to working full-time? Lukas Hansen says: Yes!</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>Data journalism. It means maths, it means statistics, it means a buttload full of numbers. Not very sexy, right? <br>But there is a sexier side to data journalism: <a target='_blank' href='http://www.sueddeutsche.de/thema/Paradise_Papers'>Paradise Papers</a>, <a target='_blank' href='https://interaktiv.morgenpost.de/m29/'>M29</a> by Berliner Morgenpost, <a target='_blank' href='http://www.washingtonpost.com/sf/investigative/collection/homes-for-the-taking/?utm_term=.b46137ada68c'>Homes for the taking</a> by Washington Post and <a target='_blank' href='https://correctiv.org/recherchen/keime/artikel/2014/11/20/toedliche-keime/'>Tödliche Keime</a> by Correctiv. That's a lot more appealing, don't you think?</p>
-          <p>The former is a means for the purpose. If you want to tell interesting stories, find new perspectives and visualize huge amounts of data, you will have to deal with numbers eventually. It can be fun – when you are looking for something specific. For something inconsistent, for interesting figures and relations. Of course, it can also be exhausting. But, first and foremost, it can be really cool. Digging into a new coding language, learning more and more tricks, seeing the first plot you've created. <br>At least, that is how it was for me when I started dealing with data journalism.</p>  
-          <p>The second part, the one with the impressing projects, is what I would call the "fun" part. It doesn't start out easy but after weeks of analyzing and visualizing you can end up with impressive results and a lot of pride. Knowing that you're showing something groundbreaking. Or that you have conveyed hundreds of megabytes of data in a way that everyone gets it.<br>And in order to do all of that you don't even have to be the best coder. Nowadays, there are tons of free tools and little helpers that visualize basic spreadsheets or addons for your browser that do the scraping for you. At the end of 2017, getting into data journalism is super easy. </p><p>Usually, I don't have too much time to learn new things after my "normal" work at Deutsche Welle. But with tools like <a target='_blank' href='https://www.datawrapper.de/'>Datawrapper</a> or <a target='_blank' href='https://carto.com/'>Carto</a> everyone and anyone can become a data journalist. Data journalism has the power to demystify mind-boggling data sets and make them comprehensible to all types of readers – from seasoned experts to curious laymen.</p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -293,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Lukas Hansen studied Journalism at TU Dortmund University. After working as a freelancer for several local newspapers he was a trainee at Kölner Stadt-Anzeiger and is now a graduate trainee at German broadcaster Deutsche Welle. 
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -309,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

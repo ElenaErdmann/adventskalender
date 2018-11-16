@@ -15,7 +15,7 @@
  -->
 <?php 
 //SHARING==================================================
-$site_name="Journocode Advent Calendar 2017";
+$site_name="Journocode Advent Calendar 2018";
 $title="Advent Calendar with data-driven treats";
 $description="Soon it's Christmas! Count down the days with the data-driven Advent Calendar from Journocode and discover a new data-driven surprise every day. Happy holidays to all of you!";
 $share_text="Count down the days till Christmas with the #ddj Advent Calendar from @journocode and discover a surprise every day.";

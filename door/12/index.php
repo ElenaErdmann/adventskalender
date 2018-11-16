@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Moritz Klack";
-$author_tw="moklick";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
-$author_homepage="https://webkid.io";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Using Neural Networks for Styling Data Visualisations";
-$description="Moritz Klack gives data visualization a Christmas touch - with the help of machine learning. Check it out as today's @Journocode advent calendar surprise!";
-$share_text="@moklick gives data visualization a Christmas touch - with the help of #MachineLearning. Check it out as today's @journocode advent calendar surprise!";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/12/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/12/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Using Neural Networks for Styling Data Visualisations
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,51 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>Machine learning is everywhere. It's used for self driving cars, face recognition, automated text generation and many other tasks. At <a target='_blank' href='https://webkid.io'>webkid</a> we create a lot of data visualisations. Unfortunately there are almost no tasks that allow the use of complex machine learning techniques like neural networks. Until now!</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-<p class="uk-text-lead ac-text-heading">Semantic Style Transfer FTW</p>
-<p><strong>EVERYBODY</strong> loves christmas and winter stuff - so why not use neural networks to make data visualisations all christmas-y?! All charts in this post were created with <a target='_blank' href='https://www.datawrapper.de/'>Datawrapper</a>. Unfortunately you can't choose fancy stylings out of the box but I am sure they will implement something like neural style transfer after seeing these awesome charts powered by AI!</p><p>
-Style transfer techniques using neural networks got very popular with photo manipulation apps like <a target='_blank' href='https://prisma-ai.com/'>Prisma</a>. The basic idea is as follows: You choose one picture that defines the style and another one with the content and feed them into a neural network to get a new image. With semantic style transfers the results get even better because you can define the different areas (like ground, sky, etc) in the style image and in the content image with help of annotations.<br>For the examples in this blog post we used <a target='_blank' href='https://github.com/alexjc/neural-doodle'>neural-doodle</a>.</p>
-<p class="uk-text-lead ac-text-heading">Crypto Currencies</p>
-<p>These days we hear a lot about bitcoins. They reach new record highs almost every day and consume so much electricity that power providers should consider using their energy to mine crypto currencies instead of feeding it into power grids. If you check out the progress of the bitcoin prices it already looks a lot like a mountain range. Here we present you our first piece “Crypto Mountain Landscape with Stars”:</p>
-<p><br><strong>Bitcoin Prices</strong></p>
-<img src="assets/bitcoin.jpg" alt="">
-<p><br><strong>Mountain</strong><br><small>Source: https://commons.wikimedia.org/wiki/File:Sohlberg-vinternatt_1901.jpg</small></p>
-<img src="assets/mountain.jpg" alt="">
-<p><br><strong>Crypto Mountain Landscape with Stars</strong></p>
-<img src="assets/bitcoin_as_mountain.jpg" alt="">
-<p class="uk-text-lead ac-text-heading">German Elections</p>
-<p>Germany just voted and we were very happy to finally be able to present the results to you. But hang on! The next election might follow shortly if the parties can't find a way to form a proper government. That would mean we'd have to create all the data visualisations all over again. As we don't want to bore our readers, we are considering coming up with some different styles this time. We searched for christmas images to theme our charts with and were not disappointed:</p>
-<p><br><strong>Election Results</strong></p>
-<img src="assets/election.jpg" alt="">
-<p><br><strong>XMAS Night</strong><br><small>Source: https://pixabay.com/en/xmas-painting-xmas-background-xmas-2018061/</small></p>
-<img src="assets/night.jpg" alt="">
-<p><br><strong>German Election Winter Nights</strong></p>
-<img src="assets/election_as_night.jpg" alt="">
-<p class="uk-text-lead ac-text-heading">Christmas Markets</p>
-<p>We *all* love christmas markets. It's so much fun to be there. The people are so kind and some of them even apologize as they stampede over you on the way to the glühwein booth. But where are all these magical places, people ask. We found the Berlin data on the open data portal <a target='_blank' href='https://daten.berlin.de/datensaetze/berliner-advents-und-weihnachtsm%C3%A4rkte'>daten.berlin.de</a>. But a standard map is too dull and boring, especially for the younger readers. It may sound obvious but we searched for images of christmas trees to style our christmas market map. Sometimes the simple ideas are the best:</p>
-<p><br><strong>Berlin Christmas Market Map</strong></p>
-<img src="assets/map.jpg" alt="">
-<p><br><strong>Christmas Tree</strong><br><small>Source: http://www.publicdomainpictures.net/view-image.php?image=61111&picture=background-snow-1</small></p>
-<img src="assets/tree.jpg" alt="">
-<p><br><strong>O Christmas Tree, O Christmas Map</strong></p>
-<img src="assets/map_as_tree.jpg" alt="">
-<p><br>On my MacBook the calculations took several hours so I rented a GPU. You can find a list of providers on the <a target='_blank' href='https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/'>NVIDIA GPU Cloud Computing overview</a>. As said above I used <a target='_blank' href='https://github.com/alexjc/neural-doodle'>neural-doodle</a> for these experiments but there are lots of other promising scripts that you can play around with:</p>
-<ul>
-  <li><a target='_blank' href=https://github.com/jcjohnson/neural-style>https://github.com/jcjohnson/neural-style</a></li>
-  <li><a target='_blank' href=https://github.com/awentzonline/image-analogies>https://github.com/awentzonline/image-analogies</a></li>
-  <li><a target='_blank' href=https://github.com/reiinakano/fast-style-transfer-deeplearnjs>https://github.com/reiinakano/fast-style-transfer-deeplearnjs</a></li>
-  <li><a target='_blank' href=https://github.com/lengstrom/fast-style-transfer>https://github.com/lengstrom/fast-style-transfer</a></li>
-  <li><a target='_blank' href=https://github.com/junyanz/CycleGAN>https://github.com/junyanz/CycleGAN</a></li>
-  <li><a target='_blank' href=https://github.com/fzliu/style-transfer>https://github.com/fzliu/style-transfer</a></li>
-  <li><a target='_blank' href=https://github.com/luanfujun/deep-photo-styletransfer>https://github.com/luanfujun/deep-photo-styletransfer</a></li>
-  <li><a target='_blank' href=https://github.com/phillipi/pix2pix>https://github.com/phillipi/pix2pix</a></li>
-  <li><a target='_blank' href=https://github.com/NVIDIA/pix2pixHD>https://github.com/NVIDIA/pix2pixHD</a></li>
-</ul>
-<p>Stay tuned and check our next post where we will discuss how to use blockchain powered Excel macros to create <strong>immersive</strong> 3D visualisations for VR/AR!</p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -330,7 +298,7 @@ Style transfer techniques using neural networks got very popular with photo mani
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Moritz is an interactive developer, journalist and neural net fanboy. While doing projects with the <a target='_blank' href='https://morgenpost.de/interaktiv'>interactive team of the Berliner Morgenpost</a> he co-founded <a target='_blank' href='https://webkid.io'>webkid</a> (a data visualisation agency with a focus on the news sector) and <a target='_blank' href='https://resiapp.io'>ResiApp</a> (a personal news assistent for younger people).</p><p> Next year he would like to find more time to contribute to Open Source software.
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -346,7 +314,7 @@ Style transfer techniques using neural networks got very popular with photo mani
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

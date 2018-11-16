@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Yaryna Serkez";
-$author_tw="iarynam";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
-$author_homepage="https://yarynam.github.io/";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="To Saturn and back: Behind the screens of Cassini’s Last Dance";
-$description="Yaryna Serkez explains how the Wall Street Journal covered Cassini’s Last Dance With Saturn";
-$share_text="As today's @journocode #ddj advent surprise, @iarynam explains how @WSJGraphics covered Cassini’s Last Dance With Saturn";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/16/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/16/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">To Saturn and back: Behind the screens of Cassini’s Last Dance
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,41 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p>This year was a true celebration of space dataviz. We've been witnessing jaw-dropping <a target='_blank' href='https://www.washingtonpost.com/graphics/national/eclipse/?utm_term=.ea1ac5ef806a'>visualizations of the solar eclipse</a>, <a target='_blank' href='https://www.nytimes.com/interactive/2017/09/12/us/hurricane-irma-satellite-images.html?_r=0'>impressive timelapse of the hurricanes</a> and <a target='_blank' href='https://pudding.cool/2017/10/satellites/'>engaging satellite voyages</a>.</p>
-          <p>Today I will shed some light on how we created our <a target='_blank' href='http://www.wsj.com/graphics/nasa-cassini-mission-last-dance-with-saturn/'>Cassini piece</a> which ended up being an interesting web experience as well as fascinating <a target='_blank' href='https://itunes.apple.com/us/story/id1313569260'>AR experiment</a>.</p>
-          <p style="text-align:center">
-          <img src="assets/16_1.gif" alt="">
-        </p>
-          <p>Our recipe has only a few main ingredients, but properly combined they can yield some pretty promising results. Open your data journalism toolboxes, search for NASA navigation data, 3D models of moons and some JS magic potion. Don’t worry too much, if you’re missing any of these. The rest of this blog will guide you on where to get and how to use them.</p>
-          <p class="uk-text-lead ac-text-heading">Cassini navigation data</p>
-          <p>The Cassini–Huygens mission is a 20 years voyage across the Solar system with 13 years being dedicated to the exploration of Saturn and its moons. The amount of data generated by this mission is enormous. Images, videos and even audio files are available at <a target='_blank' href='https://saturn.jpl.nasa.gov/galleries/images/'>abundant supply</a>. To be fair, there have already been published some pretty <a target='_blank' href='http://graphics.wsj.com/saturn/'>stunning projects</a> taking full advantage of it. But how about the actual position of the spacecraft? Can we actually get data about Cassini’s Grand Finale path?</p>
-          <p>Well, in fact, Casinni’s trajectory has been calculated way before the mission started and it’s being constantly updated since the launch. This info is freely available through ancillary information system <a target='_blank' href='https://naif.jpl.nasa.gov/naif/index.html'>SPICE</a>. SPICE is essentially a tool used by scientists and engineers to plan and design space missions. It predominantly consists of kernels (or kernels data files), that include data on position of a given body, its orientation, size, shape and <a target='_blank' href='https://naif.jpl.nasa.gov/naif/spiceconcept.html'>many other details</a> for a bunch of <a target='_blank' href='#'>different missions</a>. SPICE is natively available in C, IDL, MATLAB and Java Native Interface. But if you’ve never used any of these like me, you’re free to use a Python wrapper <a target='_blank' href='https://naif.jpl.nasa.gov/naif/data_operational.html'>SpiceyPy</a>.</p>
-          <p>SpiceyPy is well-documented and its very <a target='_blank' href='http://spiceypy.readthedocs.io/en/master/exampleone.html'>first example</a> includes code snippet for getting Cassini’s trajectory. The only thing you’ll need is to get proper kernels and tweak few arguments for your spkpos method. Note that spkpos returns coordinates of a particular object (e.g. Cassini) with respect to another object (Saturn) in Cartesian coordinate system in kilometers.</p>
-          <p>Run <a target='_blank' href='https://github.com/yarynam/Cassini-data/blob/master/grand_finale_cassini.ipynb'>this notebook</a> and you will get Cassini’s Grand Finale path in thousand of kilometers. If you print the first pair of coordinates, you will get something like this:</p>
-          <p><strong>```{'y': 183.06984, 'x': -1230.24982, 'z': 268.11913, 'time': '2017-04-23 03:46:00'}``` </strong></p>
-          <p>And eventually a super simple visualization:</p>
-          <img src="assets/16_1.png" alt="">
-          <p>For this particular project I also extracted positions of Saturn moons, so our model is more accurate and has properly tilted and sized orbits.</p>
-          <p class="uk-text-lead ac-text-heading">Assets: global maps of moons, videos and spacecraft model</p>
-          <p>So now we can draw Cassini’s path, but how to create 3D models Saturn moons? Well, as it usually happens in the programming world, even the most complicated things consist of very simple elements. Same here. Each planet is essentially just a sphere with texture. The latter should be a global map of a given celestial body. “Global map” of a moon might sound confusing, but think about a regular global map of  Earth you saw dozens of times. We need something like this, but for Saturn moons. Luckily, <a target='_blank' href='https://www.lpi.usra.edu/icy_moons/'>such maps</a> already exist. They were created by Dr. Paul Schenk from the Lunar and Planetary Institute and right now are probably the best source publicly available for everyone. </p>
-          <img src="assets/16_2.png" alt="">
-          <p>Fantastic, isn’t it? And we just started! Let’s get a model of Cassini spacecraft itself. The easiest solution will be justs to download it from <a target='_blank' href='https://nasa3d.arc.nasa.gov/detail/jpl-vtad-cassini'>NASA’s 3D website</a>, however, I strongly recommend to check with JPL or equivalent. They might have more updated resources and assets. In general, it’s a good practice to check with scientists when working on scientific dataviz, so don’t be shy to do so.</p>
-          <p>In this case, I was dealing with Blender model and in order to use it in my Three.js project I had to convert it to JSON file. There are multiple ways of doing it, but native <a target='_blank' href='https://github.com/mrdoob/three.js/tree/dev/utils/exporters/blender'>Three.js Blender exporter</a> worked the best for me.</p>
-          <img src="assets/16_3.png" alt="">
-          <p>The rest of images and videos were retrieved from this amazing <a target='_blank' href='http://ciclops.org/index.php'>web archive</a>.</p>
-          <p class="uk-text-lead ac-text-heading">JS magic potion</p>
-          <p>The development side of this project probably deserves a post of its own, but I will try to briefly touch base on what libraries and utils we used to make it happen.</p>
-          <p>
+          <div class="ac-box-container">
+            <img src="assets/teaser.png" alt="">
+          </div>
+          <p>xxx</p>
           <ul>
-            <li><a target='_blank' href='https://threejs.org/'>Three.js</a> was a backbone of our Cassini voyage. It helped to render moons and Saturn as well as their orbits and Cassini’s path.</li>
-            <li><a target='_blank' href='https://github.com/tweenjs/tween.js/'>Tween.js</a> was used to smoothly animate camera and Cassini’s movement. </li>
-            <li><a target='_blank' href='https://github.com/spite/THREE.MeshLine'>Three.MeshLine</a> helped us to render nicer and more customizable orbits’ lines. </li>
-            <li><a target='_blank' href='http://imakewebthings.com/waypoints/'>Waypoints</a> was used for scrollytelling part. However, right now I’ll probably advise to play with our in-house build tool <a target='_blank' href='https://github.com/WSJ/two-step'>TwoStep</a>.</li>
-          </ul>  
-        </p>
-          <p>That’s pretty much it. No rocket science involved, but a lot of dataviz goodies instead.</p><p>Happy programming!</p>
-          <p style="text-align:center"><img src="assets/16_2.gif" alt=""></p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -320,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Yaryna Serkez creates charts and interactive visualizations at the Wall Street Journal. She loves maps, satellite images, and tangerines. This year she was named Student and Young Data Journalist of the year in the 2017 <a href='https://www.datajournalismawards.org/'>Data Journalism Awards</a>. 
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -336,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Journocode";
-$author_tw="journocode";
-$author_fb="Journocode";
-$author_homepage="http://www.journocode.com";
+$author_name="xxx";
+$author_tw="xxx";
+$author_fb="";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Data Jokes Listicle";
-$description="Math puns are the first sine of madness. So if you get all of these nerd jokes, it is already too late! Join the #ddj side! via @journocode";
-$share_text="Math puns are the first sine of madness. So if you get all of these nerd jokes, it is already too late! Join the #ddj side! via @journocode";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/21/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/21/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Data Jokes Listicle
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,39 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>If you wonder what nerds like us think are jokes, check out this list. Memorize some of those, and you’ll be the queen/king on the next statistics party!</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>
-            <ol>
-              <li>Math puns are the first sine of madness</li>
-              <li>I need a &lt;br&gt</li>
-              <li>Binary - it's as easy as 01, 10, 11</li>
-              <li>!false - it's funny ‘cause it's true </li>
-              <li>Why do java programmers need glasses? Because they can't C#</li>
-              <li>Error 4:04 AM - sleep not found </li>
-              <li>while(alive){eat(); sleep(); code();} </li>
-              <li>#tower-of-pisa{ font-style: italic;}</li>
-              <li>The semicolon; hide and seek champion since 1958</li>
-              <li>Would you say you excel in Excel?</li>
-              <li>Life is like a sine wave: it has its ups and downs</li>
-              <li>99 little bugs in the code. Take one down, patch it around... 127 little bugs in the code.</li>
-              <li>There are only 10 kinds of people in this world: those who know binary and those who don’t.</li>
-              <li>Things aren't always #000000 and #FFFFFF</li>
-              <li>#titanic{ float: none;} </li>
-              <li>You must be the square root of two 'cause i feel irrational around you.</li>
-              <li>You make my software turn into hardware.</li>
-              <li>What music genre do statisticians go crazy about? - Drum & Bayes.</li>
-              <li>Who’s your data?</li>
-              <li>I like Big data and I cannot lie</li>
-              <li>I’ve recently decided to freeze myself to -273℃. My friends think I’ll die, but I’ll be 0K.</li>
-              <li>She said I was just average. How mean!</li>
-              <li>Programmer (noun) - A machine that turns coffee and mate into code</li>
-              <li>What’s a programmers favorite hangout place? The Foo Bar.</li>
-            </0l> 
-          </p>
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -318,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Journocode is a group of journalists, designers and computer scientists working in newsrooms across Germany. Founded on the idea of shared knowledge, Journocode is a platform for all your data-driven needs.</p><p>We offer free resources on our website for anyone interested in telling stories with data and provide <a target='_blank' href='http://workshops.journocode.com/'>workshops</a> and talks for newsrooms wanting to expand their journalistic methods. You can say hi to us via Twitter, Facebook, Email or our open <a target='_blank' href='https://journocode-slack.herokuapp.com/'>Slack Team</a>.
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -334,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

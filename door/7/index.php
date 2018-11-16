@@ -16,29 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author1_name="Sebastian Meier";
-$author1_tw="seb_meier";
-$author1_fb="";
-$author1_homepage="";
-$author2_name="Alsino Skowronnek";
-$author2_tw="alsinosko";
-$author2_fb="";
-$author2_homepage="";
-$author3_name="Hans Hack";
-$author3_tw="hnshck";
-$author3_fb="";
-$author3_homepage="";
+$author_name="xxx";
+$author_tw="xxx";
+$author_fb="";
+$author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Data Visualization in the Newsroom — Here is what we have learned";
-$description="SVIFT lets users create pretty, reusable graphics easily. Its creators explain what they learned about #dataviz in the newsroom while making it.";
-$share_text="SVIFT lets users create pretty, reusable graphics easily. Its creators @hnshck, @Alsinosko and @seb_meier explain what they learned about #dataviz in the newsroom while making it.";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -114,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/7/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/7/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -155,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -188,59 +180,27 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Data Visualization in the Newsroom — Here is what we have learned
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
-            <a href="#author1-box" uk-scroll>
-              <?= $author1_name?>  
-            </a>,
-            <a href="#author2-box" uk-scroll>
-              <?= $author2_name?>  
-            </a>,
-            <a href="#author3-box" uk-scroll>
-              <?= $author3_name?>  
+            <a href="#author-box" uk-scroll>
+              <?= $author_name?>
             </a>
           </p>
-          <p><strong>For those of you who remember: Our last advent calendar was all about tools. It’s daily surprises became the foundation of our <a target='_blank' href='http://journocode.com/data-journalism-tools/'>DDJ tool collection</a>, which now contains 40 tools to help you with your data-driven projects. <a target='_blank' href='http://www.svift.xyz/'>svift</a> might join them soon. It’s creators aimed to make a simple tool that creates pretty and reusable graphics suited for all kinds of journalistic formats. Here, they explain what they learned in the process.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p>In our last <a target='_blank' href='https://medium.com/svift-blog/hello-world-67b8633bdc3d'>blog post</a>, we explained how we came up with the idea to develop <a target='_blank' href='http://www.svift.xyz/'>svift</a> — an open source data visualization tool.To sum up (for those who missed our first post ;): While there are already many other good tools out there to make charts for online media, many of theses are still quite complex and difficult to use for editors and social media managers with little “data experience”. This is why we had the idea to build a tool that anyone can use to make beautiful charts without having prior knowledge.</p>
-          <img src="assets/08_svift_1.jpeg">
-          <p>When we set out to develop our tool, we did not just want to trust our intuition, but instead we were eager to learn what day-to-day work in a modern newsroom looks like and how our tool could help journalists and content creators improve their workflow. So we did our research and talked to more than a dozen digital news outlets and social media agencies in Germany to gain insights. Here are our <strong>main learnings</strong>:</p>
-          <p>
-            <ul>
-              <li><strong>Online journalists today have to be »multi-taskers«</strong>: While the main job of journalists is still to tell engaging stories and to inform their readers, many are also taking on additional tasks, as technology evolves and 24/7 news output demands a higher volume of content creation. Especially in local media outlets with smaller teams this means that journalists often have to wear different hats at the same time and create output across multiple channels, i.e. online news articles, social media posts, video and  print articles.</li><br>
-              <li><strong>Visual  content gets the »clicks« </strong>: Online content more than ever competes for readers’ attention and  most newsrooms report that articles or social media posts including engaging visual content (e.g. images, animated gifs or videos) receive higher click rates and greater reach than just plain text content. However, the presentation of data in a nice visual form is often still surprisingly underdeveloped in newsrooms. This is because editors are usually not familiar with ways of producing visuals themselves and depend on graphic or video editors for support.</li><br>
-              <li><strong>There is a »technical divide« in newsrooms</strong>: While certain journalists are highly computer and technology-oriented folks, most are not technical experts and some even have difficulties adapting their daily routines to new technologies which are introduced in a top-down manner. After all, journalists need to concentrate on the core of their work — reporting — and should not deal with the intricacies of new and complicated software. This is why data visualization tools for journalists (as any other software really) should be as intuitive as possible and fun to use, to easily integrate into the actual daily workflow without requiring extra training.</li><br>
-              <li><strong>There is noooooo time</strong>: Being a journalist in a big newsroom is a stressful job. Breaking news often leave little time for in-depth experimentation with graphic or data visualization tools on a day-to-day basis. Once a story is planned  and a graphic is envisioned, results need to be delivered fast. The average time to complete a simple graphic is usually short, ranging from a few minutes to a few hours at best.</li>
-            </ul>
-          </p>
-          <p>Based on the above findings during our interviews with the journalists, we realized that our tool would have to inherit certain characteristics that are based on the actual needs of the daily workflows in today’s newsrooms. We realized that especially <strong>three requirements</strong>strong> were essential for the development of such a tool:</p>
-          <ol>
-            <li><strong>Ease-of-use:</strong><br>Our tool should be very simple to use and anyone should be able to make a chart or engaging data graphic without prior technical knowledge and without getting frustrated by complex software. To make our tool more accessible, we decided to go for a conversational user interface, i.e. a personal chatbot assistant 🤖 that helps the user through the process of creating an engaging data visualization.</li><br>
-          <li><strong>Usability across multiple channels:</strong><br>Given the changing role of the online journalist today, we realized that it would make sense to create a tool, that can create interesting chart types for many different output channels. We want to enable the editor to create a chart only once and then use it not only for the online article (as image or interactive embed), but also share it directly in the optimal sizes on their social media platforms or use it in a video.</li><br>
-        
-
-          <img src="assets/08_svift_2.png">
-          <p>First sketches and ideas for different chart types (and other weird ideas ;)</p>
-
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
           
-            <li><strong>Beautiful charts fast:</strong><br>We learned that tight time constraints in journalism are real. Therefore we want to build a tool, that delivers beautiful charts quickly and in a very easily understandable flow: From start to finish, the creation of a chart with our tool — including 1) choosing a chart type, 2) data input, 3) styling and 4) graphic output — should not take more than 3–4 minutes max.</li>
-
-          <img src="assets/08_svift_3.png">
-          <p>First rough ideas for a quick step-wise user flow</p>
-          </ol>
-
-          <p><strong>Summing up</strong><br>Throughout or research, we have learned quite a bit about the daily work of online journalists today. Some of the assumptions we had at the beginning were challenged, others were supported. We think that the time we invested to talk to all our partners was very helpful for us to understand, what it was, that we were actually going to build and that can be useful in the daily work of journalists. We are pretty confident that we are heading in the right direction, but are of course, thankful for any feedback and comments to come.</p><p>We would also like to express a big thank you (👏) to all of our media partners who have taken the time to patiently answer all our (silly ;) questions and provide us with invaluable feedback. Especially, we would like to thank the following news outlets in Germany: Berliner Morgenpost, Spiegel Online, taz, Rundfunk Berlin Brandenburg (RBB), Bayerischer Rundfunk (BR), Südwestfunk (SWR), Rheinische Post, Ruhr Nachrichten, Märkische Allgemeine Zeitung.</p><p><strong>We have just completed the development of our first prototype, which we are currently testing in a closed setting.If you are interested in testing our prototype, please get in touch with us by email (hello@svift.xyz) or sign up here: <a target='_blank' href='http://www.svift.xyz/'>svift.xyz</a>.<br>In January 2018 we will release a first public demo, which we will announce here. So stay tuned or follow us on twitter (<a target='_blank' href='https://twitter.com/SviftTool'>@SviftTool</a>).</strong></p>
-
-         ---
-
-          <p>svift is designed and developed as an open source project by Sebastian Meier, Alsino Skowronnek and Hans Hack in Berlin. All our code is free and open source and can be found here: <a target='_blank' href='https://github.com/svift-org'>https://github.com/svift-org</a>. Please get in touch with us if you have suggestions or would like to contribute to the project. We are grateful for the financial support by the <a target='_blank' href='http://www.miz-babelsberg.de/'>MIZ Babelsberg</a> for a first round of initial funding.</p>
-
-
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -321,70 +281,24 @@ debug((string)$count,$DEBUG );
 <span>Share On</span> 
 </div>-->
         <div>
-          <div id="author1-box" class="uk-card uk-panel uk-card-default uk-padding-small uk-margin uk-card-body ac-box-container">
+          <div id="author-box" class="uk-card uk-panel uk-card-default uk-padding-small uk-margin uk-card-body ac-box-container">
             <h2 class="uk-margin-remove-vertical">About
             </h2>
             <h3 class="uk-card-title uk-margin-remove-top uk-margin-small-bottom">
-              <?=$author1_name?>
+              <?=$author_name?>
             </h3>
             <div class="uk-margin-small uk-clearfix">
-              <a target="_blank" href="https://twitter.com/<?= $author1_tw ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link" uk-icon="icon: twitter;ratio:1.4" <?php echo IsNullOrEmptyString($author1_tw)?"hidden":"" ?> >
+              <a target="_blank" href="https://twitter.com/<?= $author_tw ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link" uk-icon="icon: twitter;ratio:1.4" <?php echo IsNullOrEmptyString($author_tw)?"hidden":"" ?> >
               </a>
-              <a target="_blank" href="https://www.facebook.com/<?= $author_fb ?>" class="uk-float-left  uk-margin-remove-bottom  uk-icon-link " uk-icon="icon: facebook;ratio:1.4" <?php echo IsNullOrEmptyString($author1_fb)?"hidden":"" ?> >
+              <a target="_blank" href="https://www.facebook.com/<?= $author_fb ?>" class="uk-float-left  uk-margin-remove-bottom  uk-icon-link " uk-icon="icon: facebook;ratio:1.4" <?php echo IsNullOrEmptyString($author_fb)?"hidden":"" ?> >
               </a>
-              <a target="_blank" href="<?= $author_homepage ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link " uk-icon="icon: link;ratio:1.6" <?php echo IsNullOrEmptyString($author1_homepage)?"hidden":"" ?> >
+              <a target="_blank" href="<?= $author_homepage ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link " uk-icon="icon: link;ratio:1.6" <?php echo IsNullOrEmptyString($author_homepage)?"hidden":"" ?> >
               </a>
             </div>
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
-              <img class="avatar-img" src="assets/avatar1.jpg" width="50" height="50">
+              <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Sebastian Meier is currently completing his doctorate at the University of Potsdam in the field of Geoinformatics. In recent years he has worked for the Interaction Design Lab (IDL) of the FH Potsdam, as well as a freelancer in the field of data visualization and web-based systems.
-          </p>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div>
-          <div id="author2-box" class="uk-card uk-panel uk-card-default uk-padding-small uk-margin uk-card-body ac-box-container">
-            <h2 class="uk-margin-remove-vertical">About
-            </h2>
-            <h3 class="uk-card-title uk-margin-remove-top uk-margin-small-bottom">
-              <?=$author2_name?>
-            </h3>
-            <div class="uk-margin-small uk-clearfix">
-              <a target="_blank" href="https://twitter.com/<?= $author2_tw ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link" uk-icon="icon: twitter;ratio:1.4" <?php echo IsNullOrEmptyString($author2_tw)?"hidden":"" ?> >
-              </a>
-              <a target="_blank" href="https://www.facebook.com/<?= $author_fb ?>" class="uk-float-left  uk-margin-remove-bottom  uk-icon-link " uk-icon="icon: facebook;ratio:1.4" <?php echo IsNullOrEmptyString($author2_fb)?"hidden":"" ?> >
-              </a>
-              <a target="_blank" href="<?= $author_homepage ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link " uk-icon="icon: link;ratio:1.6" <?php echo IsNullOrEmptyString($author2_homepage)?"hidden":"" ?> >
-              </a>
-            </div>
-            <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
-              <img class="avatar-img" src="assets/avatar2.jpg" width="50" height="50">
-            </div>
-            <p>Alsino Skowronnek is a data and interface designer. He works as a freelance designer for various companies, media outlets and NGOs. For his project Airbnb vs Berlin he was nominated for the Designpreis Brandenburg 2016 and the Grimme Online Award 2016.
-          </p>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div>
-          <div id="author3-box" class="uk-card uk-panel uk-card-default uk-padding-small uk-margin uk-card-body ac-box-container">
-            <h2 class="uk-margin-remove-vertical">About
-            </h2>
-            <h3 class="uk-card-title uk-margin-remove-top uk-margin-small-bottom">
-              <?=$author3_name?>
-            </h3>
-            <div class="uk-margin-small uk-clearfix">
-              <a target="_blank" href="https://twitter.com/<?= $author3_tw ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link" uk-icon="icon: twitter;ratio:1.4" <?php echo IsNullOrEmptyString($author3_tw)?"hidden":"" ?> >
-              </a>
-              <a target="_blank" href="https://www.facebook.com/<?= $author_fb ?>" class="uk-float-left  uk-margin-remove-bottom  uk-icon-link " uk-icon="icon: facebook;ratio:1.4" <?php echo IsNullOrEmptyString($author3_fb)?"hidden":"" ?> >
-              </a>
-              <a target="_blank" href="<?= $author_homepage ?>" class="uk-float-left uk-margin-remove-bottom uk-icon-link " uk-icon="icon: link;ratio:1.6" <?php echo IsNullOrEmptyString($author3_homepage)?"hidden":"" ?> >
-              </a>
-            </div>
-            <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
-              <img class="avatar-img" src="assets/avatar3.jpg" width="50" height="50">
-            </div>
-            <p>Hans Hack is a web developer, creative coder and artist. He studied film and animation in England and World Heritage studies in Germany. Since 2006 he works as a freelance artist and programmer initially specializing in map-based solutions.
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -400,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 

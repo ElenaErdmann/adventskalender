@@ -16,21 +16,21 @@
 <?php 
 // AUTHOR ============================================
 // Wenn kein link angegeben wird, dann verschwindet das jeweilige Icon von der Seite
-$author_name="Frederik von Castell";
-$author_tw="FvCastell";
+$author_name="xxx";
+$author_tw="xxx";
 $author_fb="";
 $author_homepage="";
 //NOTIFICATION
 $notification_text="";
 //========================================================
-$site_name="Journocode Advent Calendar 2017";
-$title="Research talk: What we found out about German DDJ";
-$description="The science is in: The majority of data journalists in Germany actually work in small, local newsrooms.";
-$share_text="The science is in: The majority of data journalists in Germany actually work in small, local newsrooms. via @FvCastell in #ddj advent calendar by @journocode";
+$site_name="Journocode Advent Calendar 2018";
+$title="xxx";
+$description="xxx";
+$share_text="xxx";
  
 //=========================================================
 // Function for basic field validation (present and neither empty nor only white space
-$base_url="http://advent17.journocode.com";
+$base_url="https://advent17.journocode.com";
 $DEBUG = False;
 date_default_timezone_set("Europe/Berlin");
 $date1 = new DateTime('NOW');
@@ -106,20 +106,20 @@ debug((string)$count,$DEBUG );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Pagekit">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <?php if($show) : ?>
     <meta property="og:site_name" content="<?=$site_name?>">
     <meta property="og:title" content="<?=$title?>">
     <meta property="og:description" content="<?=$description?>">
     
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.advent17.journocode.com/door/20/assets/share.png">
+    <meta property="og:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <meta property="fb:app_id" content="1593595690933146" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@journocode">
     <meta name="twitter:title" content="<?=$title?>">
     <meta name="twitter:description" content="<?=$description?>">
-    <meta name="twitter:image" content="http://www.advent17.journocode.com/door/20/assets/share.png">
+    <meta name="twitter:image" content="https://www.advent18.journocode.com/door/10/assets/share.png">
     <title>
       <?=$title?>
     </title>
@@ -147,7 +147,7 @@ debug((string)$count,$DEBUG );
     <link rel="icon" type="image/png" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/favicon-16x16.png?v=gAAQ8zKY9d" sizes="16x16">
     <link rel="manifest" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/manifest.json?v=gAAQ8zKY9d">
     <link rel="mask-icon" href="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=gAAQ8zKY9d" color="#5bbad5">
-    <link rel="shortcut icon" href="http://www.advent17.journocode.com/assets/ico/fav.ico">
+    <link rel="shortcut icon" href="https://www.advent18.journocode.com/assets/ico/fav.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/mstile-144x144.png?v=gAAQ8zKY9d">
     <meta name="msapplication-config" content="http://www.journocode.com/wordpress/wp-content/uploads/fbrfg/browserconfig.xml?v=gAAQ8zKY9d">
@@ -180,7 +180,7 @@ debug((string)$count,$DEBUG );
         <article class="ac-article uk-article">
           <!--BEGIN OF ARTICLE, CHANGE HERE///////////////////////////////////////////-->
           <h1 class="ac-title uk-article-title">
-            <a class="uk-link-reset" href="">Research talk: What we found out about German DDJ
+            <a class="uk-link-reset" href="">xxx
             </a>
           </h1>
           <p class="uk-margin-remove-top uk-article-meta">by 
@@ -188,48 +188,19 @@ debug((string)$count,$DEBUG );
               <?= $author_name?>
             </a>
           </p>
-          <p><strong>Frederik von Castell conducted a study on data journalism in Germany. As today's advent calendar surprise, he presents his results.</strong></p>
           <div class="ac-box-container">
             <img src="assets/teaser.png" alt="">
           </div>
-          <p><strong>1. How do you define data driven journalism?</strong><br></p>
-          <p>It’s hard to pick out a definition that doesn’t limit the possibilities of ddj in one way or another. You can find a lot of definitions that describe ddj either as a research method or simply as visualizing data. We at Journalistisches Seminar (Johannes Gutenberg-University, Mainz) like to start more basically by defining data driven journalism as journalism that could not be done without the deeper understanding and use of data, which means that data journalists have to know <br><br>
-
-          a) how to analyse data in a (more or less) scientific way,  <br>
-          b) how to present data in a simplified, but not distorting way to users and  <br>
-          c) under which circumstances data was collected.</p>
-          <p>If you put it the other way around and ask data journalists from German newspapers which skills are required to do ddj, you’ll even get a clearer picture of what ddj is about:</p>
-          <img src="assets/bild1.png" alt="">
-
-          <p><strong>2. You’re researching data driven journalism in Germany. What is your most important finding so far?</strong><br>That there’s a lot of DDJ going on in German newsrooms, even at smaller newspapers with local focus and little manpower. Together with a group of students we – Prof. Dr. Tanjev Schultz, my colleague Gabi Glasstetter and I – did a full survey among German newspapers (coverage: 42 %) with at least one person describing themselves as a data journalist. We asked them in standardized telephone interviews about a variety of things: Requirements and hurdles for implementing ddj, team structures and role conceptions, geographical and topical focuses, forms of storytelling, often-used sources and more. To be honest, we were surprised that data ddj is established in at least eight smaller newspapers . A majority (83 %) of interviewed journalists also told us that their geographical focus is on local or regional reporting. 
-          </p>
-          <img src="assets/bild2.png" alt="">
-          <p></p>
-
-          <p><strong>3. You’ve already mentioned some of the topics you were talking about with data journalists. How does ddj look like in German newspapers?</strong><br>
-          First of all: Data journalists tend to report on an exceptionally diverse range of topics and are especially focused on teamwork. Most of our interviewed journalists told us that they have worked for four or more different departments within their newsroom. Furthermore, data journalists are of the opinion that most common newspaper topics are suitable for data-driven storytelling. </p>
-          <p>You may ask yourself how it is possible for those data journalists to get into such a wide range of topics. The answer is simple: Data journalists describe themselves as team players, often working with common editors who specialize in the respective topics and, if necessary, with developers. That’s why a lot of data journalism work is done by groups of two to four people.</p>
-          <p>We asked the data journalists under guarantee of anonymity which hurdles hinder the implementation of ddj methods at their newspapers:</p>
-          <img src="assets/bild3.png" alt="">
-          <img src="assets/bild4.png" alt="">
-          <p>We asked the data journalists under guarantee of anonymity which hurdles hinder the implementation of ddj methods at their newspapers:</p>
-          <img src="assets/bild5.png" alt="">
-          <p>Of course, lack of time and personal resources affect data journalists as much as anyone in the newsoom. The more surprising information was that two out of three interviewees perceive the lack of interest from their colleagues as a hurdle, while only ten percent mentioned a lack of management support. Lack of adequate knowledge is also mentioned by 60 %, even if the vast majority (86 %) of the data journalists told us that they visit conferences like Netzwerk Recherche’s annual conference or re:publica, meet other data journalists and members of open data movements at more or less regular meetings such as HacksHackers or use online tutorials and trainings from experienced data journalists and collaborations like Journocode. </p>
-
-          <p><strong>4. How can those results be used in ddj’s practice?</strong><br>Our aim from the start was to put our findings into practice with our students. With the support of such talented and experienced data journalists and trainers like <a  target='_blank' href='https://twitter.com/Remrow'>Vanessa Wormer</a>, <a  target='_blank' href='https://twitter.com/mirkolorenz'>Mirko Lorenz</a>, <a  target='_blank' href='https://twitter.com/dingding_peng'>Julia Rohrer</a> and last but not least <a  target='_blank' href='https://twitter.com/venohr'>Sascha Venohr</a>, we trained our students in data journalism methods and have (as of now) published five stories at ZEIT Online. We started a cooperation with <a  target='_blank' href='https://twitter.com/DIW_Berlin'>Deutsches Institut für Wirtschaftsforschung</a> and got the possibility to work with detailed data from the Socio-Economic Panel (SOEP). In working with the data, we used some of the findings explained above: Our 19 master students split into small groups of two to five people based on the skills needed for each project, with one team member acting as an expert on the specific topic of the data.  For example, a journo who studied theology in her bachelor’s degree researched on a religious topic.</p>
-          <p>Go check out the fascinating stories they found, have a pleasant Advent Season and many thanks to you, Journocode squirrels, for this awesome Advent Calendar!</p>
-
-          <p>
-            <ul>
-              <li><a  target='_blank' href='https://www.zeit.de/gesellschaft/familie/2017-07/alleinerziehende-familien-kinder-gesellschaft'>Alleinerziehende: "Einsam zu zweit"</a></li>
-              <li><a  target='_blank' href='https://www.zeit.de/politik/deutschland/2017-07/afd-linke-rechts-links-waehler-gemeinsamkeiten'>Was Anhänger von AfD und Linke eint</a></li>
-              <li><a  target='_blank' href='https://www.zeit.de/politik/deutschland/2017-08/senioren-zufriedenheit-altersvorsorge-politikverdrossenheit-studie'>Senioren: Ende gut, fast alles gut</a></li>
-              <li><a  target='_blank' href='https://www.zeit.de/gesellschaft/2017-10/religion-glaube-zufriedenheit-glueck-studien'>Religion: Wer glaubt, wird selig</a></li>
-              <li><a  target='_blank' href='https://www.zeit.de/gesellschaft/2017-11/mauerfall-deutsche-wiedervereinigung-wendekinder-ostdeutschland-westdeutschland'>Mauerfall: Wendekinder - sind wir ein Volk?</a></li>
-            </ul>
-          </p>
-
-          <p><br><a href='http://www.advent17.journocode.com'>< Back to the tree</a></p>
+          <p>xxx</p>
+          <ul>
+            <li>x</li>
+            <li>x</li>
+            <li>x</li>
+          </ul>
+          <p class="uk-text-lead ac-text-heading">xxx</p>
+          <p>xxx</p>
+          
+          <p><br><a href='https://advent18.journocode.com'>< Back to the tree</a></p>
           <!--END OF ARTICLE////////////////////////////////////////////////////////////-->
           <hr class="uk-margin uk-margin-large-top">
           <!--<div class="uk-grid-small uk-child-width-auto" uk-grid>-->
@@ -327,7 +298,7 @@ debug((string)$count,$DEBUG );
             <div class="avatar-wrapper uk-align-left@s uk-margin-small-bottom">
               <img class="avatar-img" src="assets/avatar.jpg" width="50" height="50">
             </div>
-            <p>Frederik von Castell studied Sociology, German studies and Journalism at University of Potsdam and Journalistisches Seminar (University of Mainz). He has been working as a freelancer for several newspapers and book publishers since 2011.</p><p>In 2015, he started researching data journalism as scientific assistant at Journalistisches Seminar (@JS_Mainz) and teaches data driven journalism, digital research and verification.  
+            <p>xxx  
           </p>
           </div>
         </div>
@@ -343,7 +314,7 @@ debug((string)$count,$DEBUG );
           </h3>
           <p>This surprise will be available on 
             <span class="uk-text-bold">December 
-              <?= $dir_num ?>, 2017 00:00 CET 
+              <?= $dir_num ?>, 2018 00:00 CET 
             </span>
           </p>
           <p>You can go to the newest treat by clicking 
