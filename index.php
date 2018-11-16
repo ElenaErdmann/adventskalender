@@ -387,7 +387,7 @@ $day_delta = '#day'.(string)$day_delta
           <svg viewBox="0 0 338 408" preserveAspectRatio="xMidYMid meet" width="95%" class="uk-align-center uk-margin-remove-bottom ball-svg" id="ball1">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">5 tips for those starting out in data journalism
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">1
           </div>
         </a>
       </div>
@@ -399,7 +399,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball2">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Journocode Origins - The Squirrel Awakens
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">2
           </div>
         </a>
       </div>
@@ -411,7 +411,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball3">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Speed Dat(a)ing: This is Africa Check
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">3
           </div>
         </a>
       </div>
@@ -423,7 +423,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball4">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Nerd Word Puzzle
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">4
           </div>
         </a>
       </div>
@@ -435,7 +435,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball5">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Why Data Journalism can be sexy
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">5
           </div>
         </a>
       </div>
@@ -447,7 +447,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball6">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Squirrel Talk with DataViz designer Nadieh Bremer
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">6
           </div>
         </a>
       </div>
@@ -459,7 +459,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball7">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Data Visualization in the Newsroom
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">7
           </div>
         </a>
       </div>
@@ -471,7 +471,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball8">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Advent Video
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">8
           </div>
         </a>
       </div>
@@ -483,7 +483,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball9">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Germany talks
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">9
           </div>
         </a>
       </div>
@@ -495,7 +495,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball10">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Machine Learning for Bot Detection
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">10
           </div>
         </a>
       </div>
@@ -507,7 +507,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball11">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Talk with DataViz designer Lisa Charlotte Rost
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">11
           </div>
         </a>
       </div>
@@ -519,7 +519,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball12">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Neural Networks for DataVis
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">12
           </div>
         </a>
       </div>
@@ -531,7 +531,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball13">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Tell the story behind the numbers with StoryLineJS
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">13
           </div>
         </a>
       </div>
@@ -543,7 +543,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball14">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">The Perfect Data Journalist
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">14
 
           </div>
         </a>
@@ -556,7 +556,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball15">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">A quick history of data-driven journalism
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">15
           </div>
         </a>
       </div>
@@ -568,7 +568,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball16">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Behind the screens of Cassini’s Last Dance
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">16
           </div>
         </a>
       </div>
@@ -580,7 +580,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball17">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Algorithmic Accountability: the next step for ddj
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">17
           </div>
         </a>
       </div>
@@ -592,7 +592,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball18">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">What makes </br> a winning data journalism project?
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">18
           </div>
         </a>
       </div>
@@ -604,7 +604,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball19">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Scraping for Everyone
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">19
           </div>
         </a>
       </div>
@@ -616,7 +616,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball20">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">What we found out about German DDJ
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">20
           </div>
         </a>
       </div>
@@ -628,7 +628,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball21">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Data Jokes Listicle
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">21
           </div>
         </a>
       </div>
@@ -640,7 +640,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball22">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Why media outlets should invest in ddj
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">22
           </div>
         </a>
       </div>
@@ -652,7 +652,7 @@ $day_delta = '#day'.(string)$day_delta
                id="ball23">
             <use xlink:href="#kugel" href="#kugel" />
           </svg>
-          <div id="day23-sticky"class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Talk with Data Journalist John Burn-Murdoch
+          <div id="day23-sticky"class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">23
           </div>
         </a>
       </div>
@@ -931,7 +931,7 @@ $day_delta = '#day'.(string)$day_delta
               </g>
             </g>
           </svg>
-          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">Let’s go Nuts on Data Journalism together - at JournoCon 2018!
+          <div class="uk-position-center ac-fat-font uk-text-center  uk-margin-small-top uk-padding uk-padding-remove-vertical">24
           </div>
         </a>
         <div class="hj-impressum uk-position-bottom uk-section uk-padding-small uk-padding-remove-bottom ">
